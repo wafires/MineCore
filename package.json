@@ -1,0 +1,72 @@
+{
+  "name": "minecore",
+  "version": "1.0.0",
+  "author": "wafires",
+  "description": "MineCore Launcher",
+  "license": "MIT",
+  "homepage": "https://github.com/wafires/MineCore#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wafires/MineCore.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wafires/MineCore/issues"
+  },
+  "keywords": [
+    "minecraft",
+    "launcher",
+    "electron",
+    "modrinth",
+    "fabric",
+    "forge",
+    "ely.by"
+  ],
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "prebuild": "node scripts/prebuild.js",
+    "build": "npm run prebuild && electron-builder --win"
+  },
+  "build": {
+    "appId": "com.minecore.launcher",
+    "productName": "MineCore",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!.env",
+      "!.env.example",
+      "!scripts/**",
+      "!*.md"
+    ],
+    "extraFiles": [
+      {
+        "from": "config.generated.json",
+        "to": "config.generated.json"
+      }
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  },
+  "dependencies": {
+    "@electron/remote": "^2.1.2",
+    "adm-zip": "^0.5.17",
+    "dotenv": "^16.4.5",
+    "minecraft-launcher-core": "latest",
+    "msmc": "latest",
+    "tar": "latest"
+  },
+  "devDependencies": {
+    "electron": "latest",
+    "electron-builder": "latest"
+  }
+}
