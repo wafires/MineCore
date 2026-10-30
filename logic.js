@@ -27,7 +27,7 @@ const translations = {
         btn_search: "SEARCH", no_result: "No results found.", loading: "Loading...", searching: "Searching...",
         btn_select_pack: "SELECT PACK", btn_delete: "DELETE", btn_install_pack: "INSTALL PACK",
         set_lang: "Language / Dil", set_min_ram: "Min RAM", set_max_ram: "Max RAM", set_java: "Custom Java Path", set_dir: "Game Directory",
-        set_bg_img: "Select Background Image", btn_save_settings: "SAVE SETTINGS", msg_saved: "Settings saved!",
+        set_bg_img: "Select Background Image", btn_save_settings: "SAVE SETTINGS", set_theme_title: "INTERFACE THEME", set_theme_desc: "New interface (turn off to return to the classic look)", msg_saved: "Settings saved!",
         panel_version: "ACTIVE VERSION PROFILE", play_btn: "PLAY",
         btn_show_installed: "Installed Files", select_pack_first: "Please select a Custom Pack from the left first.",
         startup_settings: "Startup Settings", set_fs_desc: "Run in Windowed Fullscreen",
@@ -43,7 +43,7 @@ const translations = {
         btn_check_updates: "Check Updates", updating: "Checking...", up_to_date: "All up to date!", mods_updated: "mods updated",
         confirm_delete_pack: "Delete Pack", confirm_delete_msg: "Are you sure? This cannot be undone.", confirm_delete_files: "Also delete all files (mods, worlds, configs)", btn_delete_pack: "Delete",
         playtime_label: "Playtime", playtime_hours: "h", playtime_mins: "m",
-        btn_change_icon: "Change Icon", btn_export_pack: "Export", btn_import_pack: "Import Pack",
+        btn_change_icon: "Change Icon", btn_open_folder: "Open Folder", btn_export_pack: "Export", btn_import_pack: "Import Pack",
         console_title: "GAME CONSOLE", console_empty: "Console will appear here when game starts...", btn_close_console: "CLOSE",
         console_search_ph: "Search logs...", console_filter_all: "ALL", console_autoscroll: "Auto-scroll", console_copy: "Copy", console_save: "Save to file", console_clear: "CLR", console_copied: "Logs copied!", console_saved: "Log file saved!", console_no_match: "No matching lines.",
         search_packs: "Search packs...",
@@ -53,7 +53,7 @@ const translations = {
         screenshots_title: "SCREENSHOTS", screenshots_empty: "No screenshots yet.", screenshot_delete: "Delete", screenshot_open: "Open Folder",
         mod_downloads: "Downloads", mod_follows: "Followers", mod_updated: "Updated", mod_created: "Created", mod_versions: "Versions", mod_categories: "Categories", mod_open_modrinth: "Open on Modrinth", mod_back: "← Back",
         status_ms_connecting: "Connecting to Microsoft...", status_ms_success: "Login Successful", status_ms_cancelled: "Microsoft login cancelled.",
-        installed_empty: "No installed content found.", installed_local_file: "Local File", installed_file_desc: "Physically installed file in pack.", btn_delete_file: "DELETE FILE",
+        installed_empty: "No installed content found.", installed_local_file: "Local File", installed_file_desc: "Physically installed file in pack.", btn_delete_file: "DELETE FILE", installed_version: "Installed", installed_latest: "Latest", btn_update: "Update",
     },
     tr: {
         modal_off_title: "Çevrimdışı Hesap Ekle", modal_off_desc: "Oyun içinde görünecek kullanıcı adını girin.",
@@ -73,7 +73,7 @@ const translations = {
         btn_search: "ARA", no_result: "Sonuç bulunamadı.", loading: "Yükleniyor...", searching: "Aranıyor...",
         btn_select_pack: "PAKET SEÇİN", btn_delete: "SİL", btn_install_pack: "PAKETİ KUR",
         set_lang: "Dil / Language", set_min_ram: "Minimum RAM", set_max_ram: "Maksimum RAM", set_java: "Özel Java Yolu", set_dir: "Ana Oyun Dizini",
-        set_bg_img: "Arka Plan Resmi Seç", btn_save_settings: "AYARLARI KAYDET", msg_saved: "Ayarlar başarıyla kaydedildi!",
+        set_bg_img: "Arka Plan Resmi Seç", btn_save_settings: "AYARLARI KAYDET", set_theme_title: "ARAYÜZ TEMASI", set_theme_desc: "Yeni arayüz (kapatınca klasik görünüme döner)", msg_saved: "Ayarlar başarıyla kaydedildi!",
         panel_version: "AKTİF SÜRÜM PROFİLİ", play_btn: "OYNA",
         btn_show_installed: "Yüklenen Dosyalar", select_pack_first: "Lütfen önce sol taraftan bir Özel Paket seçin.",
         startup_settings: "Başlangıç Ayarları", set_fs_desc: "Pencereli Tam Ekran Modunda Çalıştır",
@@ -88,8 +88,8 @@ const translations = {
         toast_mod_updated: "Mod güncellendi!", toast_settings_saved: "Ayarlar kaydedildi!", toast_pack_exported: "Paket dışa aktarıldı!", toast_pack_imported: "Paket içe aktarıldı!", toast_icon_changed: "İkon değiştirildi!",
         btn_check_updates: "Güncelleme Kontrol Et", updating: "Kontrol ediliyor...", up_to_date: "Tüm modlar güncel!", mods_updated: "mod güncellendi",
         confirm_delete_pack: "Paketi Sil", confirm_delete_msg: "Emin misin? Bu işlem geri alınamaz.", confirm_delete_files: "Tüm dosyaları da sil (modlar, dünyalar, config)", btn_delete_pack: "Sil",
-        playtime_label: "Oynanış Süresi", playtime_hours: "s", playtime_mins: "d",
-        btn_change_icon: "İkon Değiştir", btn_export_pack: "Dışa Aktar", btn_import_pack: "Paket İçe Aktar",
+        playtime_label: "Oynanış Süresi", playtime_hours: "s", playtime_mins: "dk",
+        btn_change_icon: "İkon Değiştir", btn_open_folder: "Klasörü Aç", btn_export_pack: "Dışa Aktar", btn_import_pack: "Paket İçe Aktar",
         console_title: "OYUN KONSOLU", console_empty: "Oyun başladığında konsol burada görünecek...", btn_close_console: "KAPAT",
         console_search_ph: "Loglarda ara...", console_filter_all: "TÜMÜ", console_autoscroll: "Otomatik kaydır", console_copy: "Kopyala", console_save: "Dosyaya kaydet", console_clear: "TEMİZLE", console_copied: "Loglar kopyalandı!", console_saved: "Log dosyası kaydedildi!", console_no_match: "Eşleşen satır yok.",
         search_packs: "Paket ara...",
@@ -99,7 +99,7 @@ const translations = {
         screenshots_title: "EKRAN GÖRÜNTÜLERI", screenshots_empty: "Henüz ekran görüntüsü yok.", screenshot_delete: "Sil", screenshot_open: "Klasörü Aç",
         mod_downloads: "İndirme", mod_follows: "Takipçi", mod_updated: "Güncellendi", mod_created: "Oluşturuldu", mod_versions: "Sürümler", mod_categories: "Kategoriler", mod_open_modrinth: "Modrinth'te Aç", mod_back: "← Geri",
         status_ms_connecting: "Microsoft bağlantısı açılıyor...", status_ms_success: "Premium Giriş Başarılı", status_ms_cancelled: "Microsoft girişi iptal edildi.",
-        installed_empty: "Yüklü içerik bulunamadı.", installed_local_file: "Sistem Dosyası", installed_file_desc: "Pakete kurulmuş fiziksel dosya.", btn_delete_file: "DOSYAYI SİL",
+        installed_empty: "Yüklü içerik bulunamadı.", installed_local_file: "Sistem Dosyası", installed_file_desc: "Pakete kurulmuş fiziksel dosya.", btn_delete_file: "DOSYAYI SİL", installed_version: "Yüklü", installed_latest: "En Güncel", btn_update: "Güncelle",
     },
     es: {
         modal_off_title: "Añadir Cuenta Offline", modal_off_desc: "Introduce el nombre que aparecerá en el juego.",
@@ -119,7 +119,7 @@ const translations = {
         btn_search: "BUSCAR", no_result: "Sin resultados.", loading: "Cargando...", searching: "Buscando...",
         btn_select_pack: "SELECCIONAR PACK", btn_delete: "ELIMINAR", btn_install_pack: "INSTALAR",
         set_lang: "Idioma / Language", set_min_ram: "RAM mínima", set_max_ram: "RAM máxima", set_java: "Ruta Java personalizada", set_dir: "Directorio del juego",
-        set_bg_img: "Seleccionar fondo", btn_save_settings: "GUARDAR", msg_saved: "¡Ajustes guardados!",
+        set_bg_img: "Seleccionar fondo", btn_save_settings: "GUARDAR", set_theme_title: "TEMA DE LA INTERFAZ", set_theme_desc: "Nueva interfaz (desactívala para volver al aspecto clásico)", msg_saved: "¡Ajustes guardados!",
         panel_version: "PERFIL DE VERSIÓN ACTIVO", play_btn: "JUGAR",
         btn_show_installed: "Archivos Instalados", select_pack_first: "Por favor, selecciona primero un Pack personalizado a la izquierda.",
         startup_settings: "Ajustes de inicio", set_fs_desc: "Ejecutar en pantalla completa con ventana",
@@ -135,7 +135,7 @@ const translations = {
         btn_check_updates: "Buscar Actualizaciones", updating: "Comprobando...", up_to_date: "¡Todo actualizado!", mods_updated: "mods actualizados",
         confirm_delete_pack: "Eliminar Pack", confirm_delete_msg: "¿Seguro? No se puede deshacer.", confirm_delete_files: "También eliminar todos los archivos (mods, mundos, configs)", btn_delete_pack: "Eliminar",
         playtime_label: "Tiempo jugado", playtime_hours: "h", playtime_mins: "m",
-        btn_change_icon: "Cambiar Icono", btn_export_pack: "Exportar", btn_import_pack: "Importar Pack",
+        btn_change_icon: "Cambiar Icono", btn_open_folder: "Abrir Carpeta", btn_export_pack: "Exportar", btn_import_pack: "Importar Pack",
         console_title: "CONSOLA DE JUEGO", console_empty: "La consola aparecerá aquí cuando el juego inicie...", btn_close_console: "CERRAR",
         console_search_ph: "Buscar en logs...", console_filter_all: "TODO", console_autoscroll: "Auto-desplazar", console_copy: "Copiar", console_save: "Guardar archivo", console_clear: "LIMPIAR", console_copied: "¡Logs copiados!", console_saved: "¡Archivo guardado!", console_no_match: "Sin coincidencias.",
         search_packs: "Buscar packs...",
@@ -145,7 +145,7 @@ const translations = {
         screenshots_title: "CAPTURAS", screenshots_empty: "Aún no hay capturas.", screenshot_delete: "Eliminar", screenshot_open: "Abrir carpeta",
         mod_downloads: "Descargas", mod_follows: "Seguidores", mod_updated: "Actualizado", mod_created: "Creado", mod_versions: "Versiones", mod_categories: "Categorías", mod_open_modrinth: "Abrir en Modrinth", mod_back: "← Volver",
         status_ms_connecting: "Conectando con Microsoft...", status_ms_success: "Inicio de sesión exitoso", status_ms_cancelled: "Inicio de sesión cancelado.",
-        installed_empty: "No se encontró contenido instalado.", installed_local_file: "Archivo local", installed_file_desc: "Archivo instalado físicamente en el pack.", btn_delete_file: "ELIMINAR ARCHIVO",
+        installed_empty: "No se encontró contenido instalado.", installed_local_file: "Archivo local", installed_file_desc: "Archivo instalado físicamente en el pack.", btn_delete_file: "ELIMINAR ARCHIVO", installed_version: "Instalado", installed_latest: "Último", btn_update: "Actualizar",
     },
     de: {
         modal_off_title: "Offline-Konto hinzufügen", modal_off_desc: "Gib den Benutzernamen ein, der im Spiel angezeigt wird.",
@@ -165,7 +165,7 @@ const translations = {
         btn_search: "SUCHEN", no_result: "Keine Ergebnisse.", loading: "Laden...", searching: "Suchen...",
         btn_select_pack: "PACK WÄHLEN", btn_delete: "LÖSCHEN", btn_install_pack: "INSTALLIEREN",
         set_lang: "Sprache / Language", set_min_ram: "Min RAM", set_max_ram: "Max RAM", set_java: "Benutzerdefinierter Java-Pfad", set_dir: "Spielverzeichnis",
-        set_bg_img: "Hintergrundbild wählen", btn_save_settings: "SPEICHERN", msg_saved: "Einstellungen gespeichert!",
+        set_bg_img: "Hintergrundbild wählen", btn_save_settings: "SPEICHERN", set_theme_title: "OBERFLÄCHENDESIGN", set_theme_desc: "Neue Oberfläche (ausschalten für das klassische Aussehen)", msg_saved: "Einstellungen gespeichert!",
         panel_version: "AKTIVES VERSIONSPROFIL", play_btn: "SPIELEN",
         btn_show_installed: "Installierte Dateien", select_pack_first: "Bitte zuerst ein benutzerdefiniertes Paket links auswählen.",
         startup_settings: "Starteinstellungen", set_fs_desc: "Im Fenster-Vollbildmodus ausführen",
@@ -181,7 +181,7 @@ const translations = {
         btn_check_updates: "Updates prüfen", updating: "Wird geprüft...", up_to_date: "Alles aktuell!", mods_updated: "Mods aktualisiert",
         confirm_delete_pack: "Pack löschen", confirm_delete_msg: "Sicher? Dies kann nicht rückgängig gemacht werden.", confirm_delete_files: "Alle Dateien löschen (Mods, Welten, Configs)", btn_delete_pack: "Löschen",
         playtime_label: "Spielzeit", playtime_hours: "Std", playtime_mins: "Min",
-        btn_change_icon: "Symbol ändern", btn_export_pack: "Exportieren", btn_import_pack: "Pack importieren",
+        btn_change_icon: "Symbol ändern", btn_open_folder: "Ordner öffnen", btn_export_pack: "Exportieren", btn_import_pack: "Pack importieren",
         console_title: "SPIELKONSOLE", console_empty: "Die Konsole erscheint hier, wenn das Spiel startet...", btn_close_console: "SCHLIESSEN",
         console_search_ph: "Logs durchsuchen...", console_filter_all: "ALLE", console_autoscroll: "Auto-Scroll", console_copy: "Kopieren", console_save: "In Datei speichern", console_clear: "LÖSCHEN", console_copied: "Logs kopiert!", console_saved: "Log-Datei gespeichert!", console_no_match: "Keine Treffer.",
         search_packs: "Packs suchen...",
@@ -191,7 +191,7 @@ const translations = {
         screenshots_title: "SCREENSHOTS", screenshots_empty: "Noch keine Screenshots.", screenshot_delete: "Löschen", screenshot_open: "Ordner öffnen",
         mod_downloads: "Downloads", mod_follows: "Follower", mod_updated: "Aktualisiert", mod_created: "Erstellt", mod_versions: "Versionen", mod_categories: "Kategorien", mod_open_modrinth: "Auf Modrinth öffnen", mod_back: "← Zurück",
         status_ms_connecting: "Verbindung zu Microsoft...", status_ms_success: "Anmeldung erfolgreich", status_ms_cancelled: "Microsoft-Anmeldung abgebrochen.",
-        installed_empty: "Kein installierter Inhalt gefunden.", installed_local_file: "Lokale Datei", installed_file_desc: "Physisch im Pack installierte Datei.", btn_delete_file: "DATEI LÖSCHEN",
+        installed_empty: "Kein installierter Inhalt gefunden.", installed_local_file: "Lokale Datei", installed_file_desc: "Physisch im Pack installierte Datei.", btn_delete_file: "DATEI LÖSCHEN", installed_version: "Installiert", installed_latest: "Neueste", btn_update: "Aktualisieren",
     },
     fr: {
         modal_off_title: "Ajouter un compte hors ligne", modal_off_desc: "Entrez le nom d'utilisateur qui apparaîtra dans le jeu.",
@@ -211,7 +211,7 @@ const translations = {
         btn_search: "CHERCHER", no_result: "Aucun résultat.", loading: "Chargement...", searching: "Recherche...",
         btn_select_pack: "CHOISIR UN PACK", btn_delete: "SUPPRIMER", btn_install_pack: "INSTALLER",
         set_lang: "Langue / Language", set_min_ram: "RAM min", set_max_ram: "RAM max", set_java: "Chemin Java personnalisé", set_dir: "Répertoire du jeu",
-        set_bg_img: "Choisir une image de fond", btn_save_settings: "ENREGISTRER", msg_saved: "Paramètres enregistrés !",
+        set_bg_img: "Choisir une image de fond", btn_save_settings: "ENREGISTRER", set_theme_title: "THÈME DE L'INTERFACE", set_theme_desc: "Nouvelle interface (désactivez pour revenir à l'apparence classique)", msg_saved: "Paramètres enregistrés !",
         panel_version: "PROFIL DE VERSION ACTIF", play_btn: "JOUER",
         btn_show_installed: "Fichiers Installés", select_pack_first: "Veuillez d'abord sélectionner un Pack personnalisé à gauche.",
         startup_settings: "Paramètres de démarrage", set_fs_desc: "Exécuter en plein écran fenêtré",
@@ -227,7 +227,7 @@ const translations = {
         btn_check_updates: "Vérifier les mises à jour", updating: "Vérification...", up_to_date: "Tout est à jour !", mods_updated: "mods mis à jour",
         confirm_delete_pack: "Supprimer le Pack", confirm_delete_msg: "Sûr ? Cette action est irréversible.", confirm_delete_files: "Supprimer aussi tous les fichiers (mods, mondes, configs)", btn_delete_pack: "Supprimer",
         playtime_label: "Temps de jeu", playtime_hours: "h", playtime_mins: "m",
-        btn_change_icon: "Changer l'icône", btn_export_pack: "Exporter", btn_import_pack: "Importer un Pack",
+        btn_change_icon: "Changer l'icône", btn_open_folder: "Ouvrir le dossier", btn_export_pack: "Exporter", btn_import_pack: "Importer un Pack",
         console_title: "CONSOLE DE JEU", console_empty: "La console apparaîtra ici au démarrage du jeu...", btn_close_console: "FERMER",
         console_search_ph: "Rechercher dans les logs...", console_filter_all: "TOUS", console_autoscroll: "Défilement auto", console_copy: "Copier", console_save: "Enregistrer", console_clear: "EFFACER", console_copied: "Logs copiés !", console_saved: "Fichier enregistré !", console_no_match: "Aucune correspondance.",
         search_packs: "Rechercher des packs...",
@@ -237,7 +237,7 @@ const translations = {
         screenshots_title: "CAPTURES D'ÉCRAN", screenshots_empty: "Pas encore de captures.", screenshot_delete: "Supprimer", screenshot_open: "Ouvrir le dossier",
         mod_downloads: "Téléchargements", mod_follows: "Abonnés", mod_updated: "Mis à jour", mod_created: "Créé", mod_versions: "Versions", mod_categories: "Catégories", mod_open_modrinth: "Ouvrir sur Modrinth", mod_back: "← Retour",
         status_ms_connecting: "Connexion à Microsoft...", status_ms_success: "Connexion réussie", status_ms_cancelled: "Connexion Microsoft annulée.",
-        installed_empty: "Aucun contenu installé trouvé.", installed_local_file: "Fichier local", installed_file_desc: "Fichier physiquement installé dans le pack.", btn_delete_file: "SUPPRIMER LE FICHIER",
+        installed_empty: "Aucun contenu installé trouvé.", installed_local_file: "Fichier local", installed_file_desc: "Fichier physiquement installé dans le pack.", btn_delete_file: "SUPPRIMER LE FICHIER", installed_version: "Installé", installed_latest: "Dernière version", btn_update: "Mettre à jour",
     },
     ru: {
         modal_off_title: "Добавить офлайн аккаунт", modal_off_desc: "Введите имя пользователя, которое будет отображаться в игре.",
@@ -257,7 +257,7 @@ const translations = {
         btn_search: "ПОИСК", no_result: "Ничего не найдено.", loading: "Загрузка...", searching: "Поиск...",
         btn_select_pack: "ВЫБРАТЬ ПАК", btn_delete: "УДАЛИТЬ", btn_install_pack: "УСТАНОВИТЬ",
         set_lang: "Язык / Language", set_min_ram: "Мин ОЗУ", set_max_ram: "Макс ОЗУ", set_java: "Путь к Java", set_dir: "Директория игры",
-        set_bg_img: "Выбрать фон", btn_save_settings: "СОХРАНИТЬ", msg_saved: "Настройки сохранены!",
+        set_bg_img: "Выбрать фон", btn_save_settings: "СОХРАНИТЬ", set_theme_title: "ТЕМА ИНТЕРФЕЙСА", set_theme_desc: "Новый интерфейс (отключите, чтобы вернуться к классическому виду)", msg_saved: "Настройки сохранены!",
         panel_version: "АКТИВНЫЙ ПРОФИЛЬ ВЕРСИИ", play_btn: "ИГРАТЬ",
         btn_show_installed: "Установленные файлы", select_pack_first: "Пожалуйста, сначала выберите пользовательский пакет слева.",
         startup_settings: "Настройки запуска", set_fs_desc: "Запускать в оконном полноэкранном режиме",
@@ -273,7 +273,7 @@ const translations = {
         btn_check_updates: "Проверить обновления", updating: "Проверяется...", up_to_date: "Всё актуально!", mods_updated: "модов обновлено",
         confirm_delete_pack: "Удалить Пак", confirm_delete_msg: "Уверены? Это действие нельзя отменить.", confirm_delete_files: "Удалить все файлы (моды, миры, конфиги)", btn_delete_pack: "Удалить",
         playtime_label: "Время в игре", playtime_hours: "ч", playtime_mins: "м",
-        btn_change_icon: "Сменить иконку", btn_export_pack: "Экспорт", btn_import_pack: "Импорт Пака",
+        btn_change_icon: "Сменить иконку", btn_open_folder: "Открыть папку", btn_export_pack: "Экспорт", btn_import_pack: "Импорт Пака",
         console_title: "КОНСОЛЬ ИГРЫ", console_empty: "Консоль появится здесь при запуске игры...", btn_close_console: "ЗАКРЫТЬ",
         console_search_ph: "Поиск в логах...", console_filter_all: "ВСЕ", console_autoscroll: "Автопрокрутка", console_copy: "Копировать", console_save: "Сохранить в файл", console_clear: "ОЧИСТИТЬ", console_copied: "Логи скопированы!", console_saved: "Файл сохранён!", console_no_match: "Совпадений нет.",
         search_packs: "Поиск паков...",
@@ -283,7 +283,7 @@ const translations = {
         screenshots_title: "СКРИНШОТЫ", screenshots_empty: "Скриншотов пока нет.", screenshot_delete: "Удалить", screenshot_open: "Открыть папку",
         mod_downloads: "Загрузок", mod_follows: "Подписчики", mod_updated: "Обновлено", mod_created: "Создано", mod_versions: "Версии", mod_categories: "Категории", mod_open_modrinth: "Открыть на Modrinth", mod_back: "← Назад",
         status_ms_connecting: "Подключение к Microsoft...", status_ms_success: "Вход выполнен", status_ms_cancelled: "Вход через Microsoft отменён.",
-        installed_empty: "Установленный контент не найден.", installed_local_file: "Локальный файл", installed_file_desc: "Физически установленный файл в паке.", btn_delete_file: "УДАЛИТЬ ФАЙЛ",
+        installed_empty: "Установленный контент не найден.", installed_local_file: "Локальный файл", installed_file_desc: "Физически установленный файл в паке.", btn_delete_file: "УДАЛИТЬ ФАЙЛ", installed_version: "Установлена", installed_latest: "Последняя", btn_update: "Обновить",
     }
 };
 
@@ -427,6 +427,7 @@ function getIconForVersion(vName) {
 
 function getIconForPackLoader(loader) {
     if(loader === 'forge') return 'assets/forge.png';
+    if(loader === 'neoforge') return 'assets/neoforge.png';
     if(loader === 'fabric') return 'assets/fabric.png';
     return 'assets/vanilla.png';
 }
@@ -513,8 +514,12 @@ const ELYBY_LOGO_PATH = 'assets/elyby.png';
 
 function getAccountIcon(acc) {
     if (acc.type === 'ms') return 'assets/microsoft.png';
-    if (acc.type === 'elyby') return `https://skinsystem.ely.by/avatars/${encodeURIComponent(acc.name)}/32`;
+    if (acc.type === 'elyby') return ELYBY_LOGO_PATH;
     return 'assets/steve.png';
+}
+
+function getElybyAvatarUrl(name) {
+    return `https://skinsystem.ely.by/avatars/${encodeURIComponent(name)}/32`;
 }
 
 function getAccountIconFallback(acc) {
@@ -542,9 +547,23 @@ function renderAccounts() {
         if(summaryName) { summaryName.innerText = t('status_no_account'); summaryName.style.color = '#ff4757'; }
         if(summaryType) summaryType.innerText = '';
     } else {
-        if(summaryIcon) { summaryIcon.src = getAccountIcon(active); summaryIcon.onerror = () => { summaryIcon.onerror = null; summaryIcon.src = getAccountIconFallback(active); }; }
         if(summaryName) { summaryName.innerText = active.name; summaryName.style.color = '#fff'; }
         if(summaryType) summaryType.innerText = getAccountTypeName(active);
+        if(summaryIcon) {
+            summaryIcon.src = getAccountIcon(active);
+            if (active.type === 'elyby') {
+                const avatarUrl = getElybyAvatarUrl(active.name);
+                const img = new Image();
+                img.onload = () => { summaryIcon.src = avatarUrl; };
+                img.src = avatarUrl;
+            }
+            if (active.type === 'ms') {
+                const msAvatarUrl = `https://minotar.net/helm/${encodeURIComponent(active.data?.uuid || active.name)}/64.png`;
+                const msImg = new Image();
+                msImg.onload = () => { if (accounts.find(a => a.id === activeAccountId) === active) summaryIcon.src = msAvatarUrl; };
+                msImg.src = msAvatarUrl;
+            }
+        }
     }
 
     if (listContainer) {
@@ -573,6 +592,14 @@ function renderAccounts() {
                     <button class="account-manager-del" title="${t('btn_delete')}">
                         <svg viewBox="0 0 24 24" width="15" height="15" stroke="currentColor" stroke-width="2" fill="none"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"></path></svg>
                     </button>`;
+
+                if (acc.type === 'elyby') {
+                    const avatarUrl = getElybyAvatarUrl(acc.name);
+                    const img = new Image();
+                    const imgEl = item.querySelector('.account-manager-avatar');
+                    img.onload = () => { if(imgEl) imgEl.src = avatarUrl; };
+                    img.src = avatarUrl;
+                }
                 item.addEventListener('click', () => { activeAccountId = acc.id; saveAccounts(); });
                 item.querySelector('.account-manager-del').addEventListener('click', (e) => {
                     e.stopPropagation();
@@ -674,12 +701,12 @@ window.selectCustomOption = function(value, text, iconSrc) {
     if (!ptEl) {
         ptEl = document.createElement('div');
         ptEl.id = 'version-playtime';
-        ptEl.style.cssText = 'font-size:11px;color:#666;margin-top:6px;letter-spacing:0.5px;display:flex;align-items:center;gap:5px;';
+        ptEl.style.cssText = 'font-size:12px;color:#9aa4af;margin-top:8px;letter-spacing:0.3px;display:flex;align-items:center;gap:6px;';
         const trigger = document.getElementById('main-version-trigger');
         if (trigger) trigger.parentElement.appendChild(ptEl);
     }
     if (pt) {
-        ptEl.innerHTML = `<span style="color:#00e676;font-size:13px;">⏱</span> ${t('playtime_label')}: <span style="color:#aaa;font-weight:600;">${pt}</span>`;
+        ptEl.innerHTML = `<svg viewBox="0 0 24 24" width="14" height="14" stroke="#00e676" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg><span>${t('playtime_label')}:</span><span style="color:#e6edf3;font-weight:700;">${pt}</span>`;
         ptEl.style.display = 'flex';
     } else {
         ptEl.style.display = 'none';
@@ -725,7 +752,7 @@ const GITHUB_REPO = 'wafires/MineCore';
 async function checkForUpdates() {
     try {
         const res = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/releases/latest`);
-        if (!res.ok) return; // Repo henüz release yayınlamamış olabilir, sessizce çık
+        if (!res.ok) return;
         const data = await res.json();
         const latestVersion = (data.tag_name || '').replace(/^v/, '');
         if (!latestVersion) return;
@@ -734,7 +761,6 @@ async function checkForUpdates() {
             showUpdateBanner(latestVersion, data.html_url);
         }
     } catch (e) {
-        // Sessizce başarısız ol — internet yoksa veya GitHub erişilemezse launcher'ı bloklamasın
         appendConsole(`Güncelleme kontrolü başarısız: ${e.message}`, 'info');
     }
 }
@@ -774,13 +800,11 @@ function showSetupWizard() {
     overlay.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.97);backdrop-filter:blur(20px);z-index:99999;display:flex;align-items:center;justify-content:center;';
     overlay.innerHTML = `
         <div style="width:520px;background:rgba(15,17,20,0.98);border:1px solid rgba(0,230,118,0.2);border-radius:16px;padding:40px;box-shadow:0 30px 80px rgba(0,0,0,0.8);">
-            <!-- Logo -->
             <div style="text-align:center;margin-bottom:32px;">
                 <div style="font-size:36px;font-weight:900;letter-spacing:3px;color:#fff;margin-bottom:8px;">MineCore</div>
                 <div style="font-size:13px;color:#666;letter-spacing:1px;">KURULUM SİHİRBAZI</div>
             </div>
 
-            <!-- Adım göstergesi -->
             <div id="wizard-steps" style="display:flex;gap:8px;margin-bottom:28px;">
                 <div class="wstep active" data-step="0" style="flex:1;height:3px;border-radius:2px;background:#00e676;transition:0.3s;"></div>
                 <div class="wstep" data-step="1" style="flex:1;height:3px;border-radius:2px;background:#222;transition:0.3s;"></div>
@@ -788,7 +812,6 @@ function showSetupWizard() {
                 <div class="wstep" data-step="3" style="flex:1;height:3px;border-radius:2px;background:#222;transition:0.3s;"></div>
             </div>
 
-            <!-- Adım içeriği -->
             <div id="wizard-content"></div>
         </div>`;
     document.body.appendChild(overlay);
@@ -1186,6 +1209,7 @@ function showConsole() { createConsoleOverlay(); document.getElementById('consol
 
 const _logBtn = document.createElement('button');
 _logBtn.style.cssText = 'position:fixed;bottom:24px;left:24px;z-index:8887;background:rgba(15,17,20,0.9);border:1px solid rgba(0,230,118,0.25);color:#00e676;padding:7px 14px;border-radius:8px;font-size:11px;font-weight:700;cursor:pointer;backdrop-filter:blur(10px);letter-spacing:1px;transition:0.2s;display:flex;align-items:center;gap:6px;';
+_logBtn.id = 'log-btn';
 _logBtn.innerHTML = `<svg viewBox="0 0 24 24" width="13" height="13" stroke="currentColor" stroke-width="2" fill="none"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>LOG`;
 _logBtn.onclick = () => { createConsoleOverlay(); const o = document.getElementById('console-overlay'); o.style.display = o.style.display === 'none' ? 'flex' : 'none'; if(o.style.display === 'flex') renderConsoleLines(); };
 document.body.appendChild(_logBtn);
@@ -1215,14 +1239,30 @@ async function checkModUpdates() {
         if (projId.startsWith('local__')) continue;
         if (updateBtn) updateBtn.innerText = `${t('checking_mod')} ${i+1}/${ids.length}`;
         try {
-            const url = `https://api.modrinth.com/v2/project/${projId}/version?game_versions=["${config.version}"]&loaders=["${config.loader}"]`;
-            const versions = await (await fetch(url)).json();
-            if (!versions || versions.length === 0) continue;
-            const latest = versions[0]; const latestFile = latest.files.find(f => f.primary) || latest.files[0];
+            const allVersions = await (await fetch(`https://api.modrinth.com/v2/project/${projId}/version?limit=100`)).json();
+            if (!allVersions || allVersions.length === 0) continue;
+
+            let candidates = allVersions.filter(v =>
+                v.game_versions.includes(config.version) &&
+                (config.loader === 'vanilla' || v.loaders.includes(config.loader) || (config.loader === 'neoforge' && v.loaders.includes('forge')) || (config.loader === 'forge' && v.loaders.includes('neoforge')))
+            );
+            if (candidates.length === 0) {
+                candidates = allVersions.filter(v => v.game_versions.includes(config.version));
+            }
+            if (candidates.length === 0 && config.loader !== 'vanilla') {
+                candidates = allVersions.filter(v => v.loaders.includes(config.loader));
+            }
+            if (candidates.length === 0) continue;
+
+            const latest = candidates[0];
+            const latestFile = latest.files.find(f => f.primary) || latest.files[0];
+            if (!latestFile) continue;
+
             if (latestFile.filename !== mods[projId]) {
                 const oldPath = path.join(packsDir, activePack, 'mods', mods[projId]);
                 if (fs.existsSync(oldPath)) fs.unlinkSync(oldPath);
-                fs.writeFileSync(path.join(packsDir, activePack, 'mods', latestFile.filename), Buffer.from(await (await fetch(latestFile.url)).arrayBuffer()));
+                const buf = Buffer.from(await (await fetch(latestFile.url)).arrayBuffer());
+                fs.writeFileSync(path.join(packsDir, activePack, 'mods', latestFile.filename), buf);
                 saveInstalledMod(projId, latestFile.filename);
                 updated++; appendConsole(`Updated: ${mods[projId]} → ${latestFile.filename}`, 'success');
             }
@@ -1248,9 +1288,22 @@ window.exportPack = function(packName, e) {
 window.importPack = function() {
     try {
         const { dialog } = require('@electron/remote');
-        const files = dialog.showOpenDialogSync({ filters: [{ name: 'MineCore Pack', extensions: ['mcpack'] }], properties: ['openFile'] });
+        const files = dialog.showOpenDialogSync({ filters: [{ name: 'Modpack', extensions: ['mcpack', 'zip'] }], properties: ['openFile'] });
         if (!files || files.length === 0) return;
-        const zip = new admZip(files[0]);
+        const filePath = files[0];
+        const AdmZip = require('adm-zip');
+        const zip = new AdmZip(filePath);
+
+        const manifestEntry = zip.getEntry('manifest.json');
+        if (manifestEntry) {
+            let manifest;
+            try { manifest = JSON.parse(zip.readAsText(manifestEntry)); } catch(_) { manifest = null; }
+            if (manifest && manifest.manifestType === 'minecraftModpack') {
+                importCurseForgePack(zip, manifest);
+                return;
+            }
+        }
+
         const topDir = zip.getEntries()[0]?.entryName.split('/')[0] || 'ImportedPack';
         let destName = topDir; let c = 1;
         while (fs.existsSync(path.join(packsDir, destName))) { destName = `${topDir}_${c}`; c++; }
@@ -1261,15 +1314,141 @@ window.importPack = function() {
     } catch(err) { showToast('Import error: ' + err.message, 'error'); }
 };
 
+async function importCurseForgePack(zip, manifest) {
+    const rawName = manifest.name || 'CurseForge_Pack';
+    let destName = rawName.replace(/[\\/:*?"<>|]/g, '_').trim() || 'CurseForge_Pack';
+    let c = 1;
+    while (fs.existsSync(path.join(packsDir, destName))) { destName = `${rawName}_${c}`; c++; }
+    const newPackPath = path.join(packsDir, destName);
+    fs.mkdirSync(newPackPath, { recursive: true });
+    fs.mkdirSync(path.join(newPackPath, 'mods'), { recursive: true });
+
+    const mcVersion = manifest.minecraft?.version || '1.20.1';
+    const loaderEntry = (manifest.minecraft?.modLoaders || []).find(l => l.primary) || manifest.minecraft?.modLoaders?.[0];
+    let loader = 'forge';
+    if (loaderEntry?.id) {
+        if (loaderEntry.id.startsWith('fabric')) loader = 'fabric';
+        else if (loaderEntry.id.startsWith('neoforge')) loader = 'neoforge';
+        else if (loaderEntry.id.startsWith('forge')) loader = 'forge';
+        else if (loaderEntry.id.startsWith('quilt')) loader = 'fabric';
+    }
+    fs.writeFileSync(path.join(newPackPath, 'minecore_config.json'), JSON.stringify({ version: mcVersion, loader, isolated: true }));
+
+    zip.getEntries().forEach(entry => {
+        if (entry.entryName.startsWith('overrides/') && !entry.isDirectory) {
+            const rel = entry.entryName.replace('overrides/', '');
+            const dest = path.join(newPackPath, rel);
+            fs.mkdirSync(path.dirname(dest), { recursive: true });
+            fs.writeFileSync(dest, entry.getData());
+        }
+    });
+
+    let modal = document.getElementById('mp-progress-modal');
+    if (!modal) { modal = document.createElement('div'); modal.id = 'mp-progress-modal'; modal.className = 'modal-overlay'; document.body.appendChild(modal); }
+    modal.style.display = 'flex';
+    modal.innerHTML = `<div class="modal-content" style="width:420px;text-align:center;">
+        <h3 id="mp-progress-title">${t('mp_reading')}</h3>
+        <div style="background:#111;border-radius:8px;height:10px;margin:18px 0 8px;overflow:hidden;">
+            <div id="mp-progress-bar" style="background:#00e676;height:100%;width:0%;transition:width 0.2s;"></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:11px;color:#888;">
+            <span id="mp-progress-sub">CurseForge</span>
+            <span id="mp-progress-pct">0%</span>
+        </div>
+    </div>`;
+    const setProgress = (pct, sub) => {
+        const bar = document.getElementById('mp-progress-bar');
+        const pctEl = document.getElementById('mp-progress-pct');
+        const subEl = document.getElementById('mp-progress-sub');
+        if(bar) bar.style.width = pct + '%';
+        if(pctEl) pctEl.innerText = Math.round(pct) + '%';
+        if(subEl && sub) subEl.innerText = sub;
+    };
+
+    const modFiles = manifest.files || [];
+    const total = modFiles.length;
+    let failed = 0;
+
+    for (let i = 0; i < modFiles.length; i++) {
+        const { projectID, fileID } = modFiles[i];
+        setProgress((i / total) * 100, `${t('mp_progress')}: ${i + 1} / ${total}`);
+        try {
+            const idStr = String(fileID);
+            const part1 = idStr.substring(0, 4).replace(/^0+/, '');
+            const part2 = idStr.substring(4).replace(/^0+/, '') || '0';
+            const cdnUrl = `https://mediafilez.forgecdn.net/files/${part1}/${part2}/`;
+
+            const res = await fetch(cdnUrl);
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+            let filename = `mod_${projectID}_${fileID}.jar`;
+            const disposition = res.headers.get('content-disposition');
+            if (disposition) {
+                const match = disposition.match(/filename="?([^";]+)"?/);
+                if (match) filename = decodeURIComponent(match[1]);
+            } else if (res.url && res.url.includes('/')) {
+                const urlName = decodeURIComponent(res.url.split('/').pop());
+                if (urlName && urlName.includes('.')) filename = urlName;
+            }
+
+            const buf = Buffer.from(await res.arrayBuffer());
+            fs.writeFileSync(path.join(newPackPath, 'mods', filename), buf);
+        } catch(e) {
+            failed++;
+            appendConsole(`CurseForge mod indirilemedi (project ${projectID}, file ${fileID}): ${e.message}`, 'warn');
+        }
+    }
+
+    setProgress(100, t('mp_done'));
+    if (modal) modal.style.display = 'none';
+    loadPacks(); loadAllVersions();
+    activePack = destName;
+
+    if (failed > 0) {
+        showToast(`${t('toast_pack_imported')} (${failed} mod indirilemedi, manuel eklemen gerekebilir)`, 'warn', 6000);
+    } else {
+        showToast(t('toast_pack_imported'), 'success');
+    }
+}
+
+function snapshotCrashReports(gameDir) {
+    const crashDir = path.join(gameDir, 'crash-reports');
+    const key = `minecore_known_crashes_${gameDir.replace(/[^a-z0-9]/gi,'_')}`;
+    if (!fs.existsSync(crashDir)) { localStorage.setItem(key, '[]'); return; }
+    const files = fs.readdirSync(crashDir).filter(f => f.endsWith('.txt'));
+    localStorage.setItem(key, JSON.stringify(files));
+}
+
+function isRealCrashReport(gameDir, filename) {
+    try {
+        const content = fs.readFileSync(path.join(gameDir, 'crash-reports', filename), 'utf8');
+
+        if (/ClientShutdownWatchdog|Client shutdown watchdog|ServerWatchdog\.createWatchdogCrashReport/i.test(content)) {
+            return false;
+        }
+
+        const hasDescription = /^Description:/m.test(content);
+        const hasThrowable = /Caused by:|^java\.[a-zA-Z.]*(Exception|Error)/m.test(content);
+
+        return hasDescription || hasThrowable;
+    } catch (e) {
+        return false;
+    }
+}
+
 function checkCrashReports(gameDir) {
     const crashDir = path.join(gameDir, 'crash-reports');
     if (!fs.existsSync(crashDir)) return;
-    const files = fs.readdirSync(crashDir).filter(f => f.endsWith('.txt')).sort().reverse();
-    if (files.length === 0) return;
-    const lastCrash = files[0];
-    const lastKey = `minecore_last_crash_${gameDir.replace(/[^a-zA-Z0-9]/g,'_')}`;
-    if (localStorage.getItem(lastKey) === lastCrash) return;
-    localStorage.setItem(lastKey, lastCrash);
+    const key = `minecore_known_crashes_${gameDir.replace(/[^a-z0-9]/gi,'_')}`;
+    const known = JSON.parse(localStorage.getItem(key) || '[]');
+    const current = fs.readdirSync(crashDir).filter(f => f.endsWith('.txt'));
+    const newFiles = current.filter(f => !known.includes(f));
+    localStorage.setItem(key, JSON.stringify(current));
+
+    const newCrashes = newFiles.filter(f => isRealCrashReport(gameDir, f));
+    if (newCrashes.length === 0) return;
+
+    const lastCrash = newCrashes.sort().reverse()[0];
     let banner = document.getElementById('crash-banner');
     if (!banner) { banner = document.createElement('div'); banner.id = 'crash-banner'; banner.style.cssText = 'position:fixed;top:0;left:0;width:100%;z-index:9997;background:rgba(255,71,87,0.12);border-bottom:2px solid rgba(255,71,87,0.4);padding:12px 24px;display:flex;align-items:center;justify-content:space-between;backdrop-filter:blur(10px);'; document.body.appendChild(banner); }
     banner.style.display = 'flex';
@@ -1278,7 +1457,7 @@ function checkCrashReports(gameDir) {
         <div style="display:flex;gap:10px;">
             <button class="ms-btn" style="font-size:11px;padding:6px 14px;" onclick="viewCrashReport('${gameDir.replace(/\\/g,'\\\\').replace(/'/g,"\\'")}','${lastCrash}')">${t('btn_view_crash')}</button>
             <button class="ms-btn logout-btn" style="font-size:11px;padding:6px 12px;" onclick="document.getElementById('crash-banner').style.display='none'">${t('btn_close_crash')}</button>
-        </div>`;
+        </div>`; 
 }
 window.viewCrashReport = function(gameDir, filename) {
     const content = fs.readFileSync(path.join(gameDir, 'crash-reports', filename), 'utf8');
@@ -1320,6 +1499,9 @@ loadPacks = function() {
                     <span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:13px;">${f}</span>${isolatedBadge}${ptBadge}
                 </div>
                 <div class="pack-actions">
+                    <button class="pack-action-btn" title="${t('btn_open_folder')}" onclick="require('electron').shell.openPath(require('path').join('${packsDir.replace(/\\/g,'\\\\').replace(/'/g,"\\'")}','${f.replace(/'/g,"\\'")}'));event.stopPropagation()">
+                        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                    </button>
                     <button class="pack-action-btn" title="${t('btn_change_icon')}" onclick="window.changePackIcon('${f}',event)">${iSvg}</button>
                     <button class="pack-action-btn" title="${t('btn_export_pack')}" onclick="window.exportPack('${f}',event)">${xSvg}</button>
                     <button class="pack-action-btn" onclick="editPack('${f}');event.stopPropagation()">${eSvg}</button>
@@ -1341,20 +1523,6 @@ loadPacks = function() {
 };
 
 launcher.on('data', (line) => { appendConsole(typeof line === 'string' ? line : String(line), 'info'); });
-launcher.on('close', () => {
-    stopPlaytimeTracking();
-    loadPacks();
-    if (selectedVersionValue) {
-        const ptKey = selectedVersionValue.startsWith('PACK:') ? selectedVersionValue.replace('PACK:','') : selectedVersionValue;
-        const ptEl = document.getElementById('version-playtime');
-        const pt = getPlaytime(ptKey);
-        if (ptEl) {
-            if (pt) { ptEl.innerHTML = `<span style="color:#00e676;font-size:13px;">⏱</span> ${t('playtime_label')}: <span style="color:#aaa;font-weight:600;">${pt}</span>`; ptEl.style.display = 'flex'; }
-            else ptEl.style.display = 'none';
-        }
-    }
-    setTimeout(() => checkCrashReports(window._lastGameDir || originalPath), 1500);
-});
 
 document.getElementById('save-settings-btn')?.addEventListener('click', () => {
     setTimeout(() => showToast(t('toast_settings_saved'), 'success'), 300);
@@ -1363,7 +1531,7 @@ document.getElementById('save-settings-btn')?.addEventListener('click', () => {
 window.openScreenshots = function() {
     const packName = activePack;
     const config = packName !== 'Varsayılan' ? getPackConfig(packName) : null;
-    const ssDir = (config && config.isolated)
+    const ssDir = (config && config.isolated === true)
         ? path.join(packsDir, packName, 'screenshots')
         : path.join(originalPath, 'screenshots');
     if (!fs.existsSync(ssDir)) fs.mkdirSync(ssDir, { recursive: true });
@@ -1671,52 +1839,77 @@ window.toggleFavorite = function(e, val) {
 
 async function loadAllVersions() {
     let modded = [];
+    const vDir = path.join(originalPath, 'versions');
+    if (fs.existsSync(vDir)) {
+        fs.readdirSync(vDir).forEach(f => {
+            if (fs.statSync(path.join(vDir, f)).isDirectory() && f.toLowerCase().match(/forge|fabric|optifine|neoforge/))
+                modded.push(f);
+        });
+    }
+
+    let vanillaList = [];
     try {
-        const vDir = path.join(originalPath, 'versions');
-        if (fs.existsSync(vDir)) fs.readdirSync(vDir).forEach(f => { if (fs.statSync(path.join(vDir, f)).isDirectory() && f.toLowerCase().match(/forge|fabric|optifine/)) modded.push(f); });
-        
         const data = await (await fetch('https://launchermeta.mojang.com/mc/game/version_manifest.json')).json();
-        let vanillaList = data.versions.filter(v => v.type === 'release').map(v => v.id);
-        if(modalVersionSelect) modalVersionSelect.innerHTML = vanillaList.map(v => `<option value="${v}">${v}</option>`).join('');
-        
-        if(customOptions) customOptions.innerHTML = ''; 
-        
-        let favs = JSON.parse(localStorage.getItem('minecore_favorites')) || [];
-        let favHtml = ''; let packsHtml = ''; let moddedHtml = ''; let vanillaHtml = '';
-        let firstVal = null, firstIco = null, firstTxt = null;
-
-        function createOpt(val, txt, icon) {
-            if(!firstVal) { firstVal = val; firstIco = icon; firstTxt = txt; }
-            const isFav = favs.includes(val);
-            const starCol = isFav ? '#f1c40f' : '#444';
-            const html = `<div class="select-option" style="display:flex; justify-content:space-between; align-items:center;" onclick="selectCustomOption('${val}', '${txt}', '${icon}')">
-                <div style="display:flex; align-items:center; gap:10px;"><img src="${icon}" onerror="this.src='https://via.placeholder.com/20'"> ${txt}</div>
-                <span onclick="toggleFavorite(event, '${val}')" style="color:${starCol}; font-size:20px; padding:0 5px; transition:0.2s;" onmouseover="this.style.color='#f1c40f'" onmouseout="this.style.color='${starCol}'">★</span>
-            </div>`;
-            if(isFav) favHtml += html;
-            return html;
+        vanillaList = data.versions.filter(v => v.type === 'release').map(v => v.id);
+        localStorage.setItem('minecore_version_cache', JSON.stringify(vanillaList));
+    } catch(_) {
+        const cached = localStorage.getItem('minecore_version_cache');
+        if (cached) {
+            try { vanillaList = JSON.parse(cached); } catch(_) {}
         }
-
-        if (fs.existsSync(packsDir)) {
-            const packs = fs.readdirSync(packsDir).filter(f => fs.statSync(path.join(packsDir, f)).isDirectory());
-            if (packs.length > 0) packs.forEach(p => { packsHtml += createOpt(`PACK:${p}`, p, getIconForPackLoader(getPackConfig(p).loader)); });
+        if (vanillaList.length === 0 && fs.existsSync(vDir)) {
+            vanillaList = fs.readdirSync(vDir)
+                .filter(f => fs.statSync(path.join(vDir, f)).isDirectory() && !f.toLowerCase().match(/forge|fabric|optifine|neoforge/))
+                .sort((a, b) => {
+                    const pa = a.split('.').map(n => parseInt(n)||0);
+                    const pb = b.split('.').map(n => parseInt(n)||0);
+                    for (let i = 0; i < Math.max(pa.length, pb.length); i++) {
+                        const diff = (pb[i]||0)-(pa[i]||0);
+                        if (diff !== 0) return diff;
+                    }
+                    return 0;
+                });
         }
-        
-        if (modded.length > 0) modded.forEach(v => { moddedHtml += createOpt(v, v, getIconForVersion(v)); });
-        vanillaList.forEach(v => { vanillaHtml += createOpt(v, v, 'assets/vanilla.png'); });
+    }
 
-        let finalHtml = '';
-        if(favHtml) finalHtml += `<div class="select-optgroup" style="color:#f1c40f;">${t('grp_favorites')}</div>` + favHtml;
-        if(packsHtml) finalHtml += `<div class="select-optgroup">${t('grp_my_packs')}</div>` + packsHtml;
-        if(moddedHtml) finalHtml += `<div class="select-optgroup">${t('grp_installed')}</div>` + moddedHtml;
-        if(vanillaHtml) finalHtml += `<div class="select-optgroup">${t('grp_vanilla')}</div>` + vanillaHtml;
+    if(modalVersionSelect) modalVersionSelect.innerHTML = vanillaList.map(v => `<option value="${v}">${v}</option>`).join('');
+    if(customOptions) customOptions.innerHTML = '';
 
-        if(customOptions) customOptions.innerHTML = finalHtml;
-        
-        const savedVal = localStorage.getItem('minecore_version') || firstVal;
-        if(savedVal) { let txt = savedVal.replace('PACK:', ''), ico = savedVal.startsWith('PACK:') ? getIconForPackLoader(getPackConfig(txt).loader) : getIconForVersion(savedVal); selectCustomOption(savedVal, txt, ico); }
-        if(playButton && !window._gameRunning) playButton.disabled = false;
-    } catch (e) { if(statusText) statusText.innerText = "Sürümler yüklenemedi."; }
+    let favs = JSON.parse(localStorage.getItem('minecore_favorites')) || [];
+    let favHtml = ''; let packsHtml = ''; let moddedHtml = ''; let vanillaHtml = '';
+    let firstVal = null, firstIco = null, firstTxt = null;
+
+    function createOpt(val, txt, icon) {
+        if(!firstVal) { firstVal = val; firstIco = icon; firstTxt = txt; }
+        const isFav = favs.includes(val);
+        const starCol = isFav ? '#f1c40f' : '#444';
+        const html = `<div class="select-option" style="display:flex; justify-content:space-between; align-items:center;" onclick="selectCustomOption('${val}', '${txt}', '${icon}')">
+            <div style="display:flex; align-items:center; gap:10px;"><img src="${icon}" onerror="this.src='https://via.placeholder.com/20'"> ${txt}</div>
+            <span onclick="toggleFavorite(event, '${val}')" style="color:${starCol}; font-size:20px; padding:0 5px; transition:0.2s;" onmouseover="this.style.color='#f1c40f'" onmouseout="this.style.color='${starCol}'">★</span>
+        </div>`;
+        if(isFav) favHtml += html;
+        return html;
+    }
+
+    if (fs.existsSync(packsDir)) {
+        const packs = fs.readdirSync(packsDir).filter(f => fs.statSync(path.join(packsDir, f)).isDirectory());
+        if (packs.length > 0) packs.forEach(p => { packsHtml += createOpt(`PACK:${p}`, p, getIconForPackLoader(getPackConfig(p).loader)); });
+    }
+
+    if (modded.length > 0) modded.forEach(v => { moddedHtml += createOpt(v, v, getIconForVersion(v)); });
+    vanillaList.forEach(v => { vanillaHtml += createOpt(v, v, 'assets/vanilla.png'); });
+
+    let finalHtml = '';
+    if(favHtml) finalHtml += `<div class="select-optgroup" style="color:#f1c40f;">${t('grp_favorites')}</div>` + favHtml;
+    if(packsHtml) finalHtml += `<div class="select-optgroup">${t('grp_my_packs')}</div>` + packsHtml;
+    if(moddedHtml) finalHtml += `<div class="select-optgroup">${t('grp_installed')}</div>` + moddedHtml;
+    if(vanillaHtml) finalHtml += `<div class="select-optgroup">${t('grp_vanilla')}</div>` + vanillaHtml;
+
+    if(customOptions) customOptions.innerHTML = finalHtml;
+
+    const savedVal = localStorage.getItem('minecore_version') || firstVal;
+    if(savedVal) { let txt = savedVal.replace('PACK:', ''), ico = savedVal.startsWith('PACK:') ? getIconForPackLoader(getPackConfig(txt).loader) : getIconForVersion(savedVal); selectCustomOption(savedVal, txt, ico); }
+    if(playButton && !window._gameRunning) playButton.disabled = false;
 }
 
 function renderInstallations() {
@@ -1736,22 +1929,30 @@ window.selectPack = function(packName) { activePack = packName; loadPacks(); doc
 
 let _modsWatcher = null;
 let _watcherDebounce = null;
+let _lastModsSnapshot = null;
 
 function startModsWatcher(packName) {
-    if (_modsWatcher) { try { _modsWatcher.close(); } catch(_) {} _modsWatcher = null; }
+    if (_modsWatcher) { clearInterval(_modsWatcher); _modsWatcher = null; }
+    _lastModsSnapshot = null;
     if (!packName || packName === 'Varsayılan') return;
 
     const modsDir = path.join(packsDir, packName, 'mods');
     if (!fs.existsSync(modsDir)) fs.mkdirSync(modsDir, { recursive: true });
 
-    try {
-        _modsWatcher = fs.watch(modsDir, (eventType, filename) => {
-            if (!filename) return;
-            clearTimeout(_watcherDebounce);
-            _watcherDebounce = setTimeout(() => syncModsFolder(packName), 400);
-        });
-        syncModsFolder(packName);
-    } catch(e) { console.error('Watcher başlatılamadı:', e); }
+    const poll = () => {
+        try {
+            const files = fs.readdirSync(modsDir).sort().join('|');
+            if (_lastModsSnapshot !== null && files !== _lastModsSnapshot) {
+                clearTimeout(_watcherDebounce);
+                _watcherDebounce = setTimeout(() => syncModsFolder(packName), 200);
+            }
+            _lastModsSnapshot = files;
+        } catch (e) {
+        }
+    };
+    poll();
+    _modsWatcher = setInterval(poll, 1500);
+    syncModsFolder(packName);
 }
 
 function syncModsFolder(packName) {
@@ -1807,17 +2008,90 @@ function updateSearchPlaceholder() {
     else { modSearchInput.placeholder = t('search_mp'); titleEl.innerText = t('title_trend_mp'); }
 }
 
+let selectedCategories = new Set();
+let modrinthCategoriesCache = null;
+const modCategoriesContainer = document.getElementById('mod-categories');
+
+let strictLoaderMode = localStorage.getItem('minecore_strict_loader') === 'true';
+const strictLoaderToggle = document.getElementById('strict-loader-toggle');
+const strictLoaderWrap = document.getElementById('strict-loader-wrap');
+if (strictLoaderToggle) strictLoaderToggle.checked = strictLoaderMode;
+strictLoaderToggle?.addEventListener('change', () => {
+    strictLoaderMode = strictLoaderToggle.checked;
+    localStorage.setItem('minecore_strict_loader', String(strictLoaderMode));
+    currentModPage = 0;
+    fetchMods();
+});
+
+function capitalizeCategory(name) {
+    return name.replace(/[-_]/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+}
+
+async function ensureModrinthCategories() {
+    if (modrinthCategoriesCache) return modrinthCategoriesCache;
+    try {
+        const res = await fetch('https://api.modrinth.com/v2/tag/category');
+        modrinthCategoriesCache = await res.json();
+    } catch (e) {
+        modrinthCategoriesCache = [];
+    }
+    return modrinthCategoriesCache;
+}
+
+async function renderModCategories() {
+    if (!modCategoriesContainer) return;
+    const all = await ensureModrinthCategories();
+    const relevant = all.filter(c => c.project_type === currentModrinthType && c.header === 'categories');
+
+    if (relevant.length === 0) {
+        modCategoriesContainer.innerHTML = '';
+        modCategoriesContainer.style.display = 'none';
+        return;
+    }
+
+    modCategoriesContainer.style.display = 'flex';
+    const clearBtn = selectedCategories.size > 0
+        ? `<button class="cat-chip cat-chip-clear" id="cat-clear-btn">✕ Temizle</button>`
+        : '';
+
+    modCategoriesContainer.innerHTML = clearBtn + relevant.map(c => `
+        <button class="cat-chip${selectedCategories.has(c.name) ? ' active' : ''}" data-cat="${c.name}">
+            ${c.icon ? `<span class="cat-chip-icon">${c.icon}</span>` : ''}
+            <span>${capitalizeCategory(c.name)}</span>
+        </button>
+    `).join('');
+
+    document.getElementById('cat-clear-btn')?.addEventListener('click', () => {
+        selectedCategories.clear();
+        currentModPage = 0;
+        renderModCategories();
+        fetchMods();
+    });
+
+    modCategoriesContainer.querySelectorAll('.cat-chip[data-cat]').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const cat = btn.dataset.cat;
+            if (selectedCategories.has(cat)) selectedCategories.delete(cat);
+            else selectedCategories.add(cat);
+            currentModPage = 0;
+            renderModCategories();
+            fetchMods();
+        });
+    });
+}
+
 mrTabs.forEach(tab => {
     tab.addEventListener('click', () => {
         mrTabs.forEach(tb => tb.classList.remove('active')); tab.classList.add('active');
         currentModrinthType = tab.getAttribute('data-type');
-        currentModPage = 0; currentQuery = ''; 
+        currentModPage = 0; currentQuery = ''; selectedCategories.clear();
         if(modSearchInput) modSearchInput.value = '';
         const btn = document.getElementById('btn-show-installed');
         if (btn) btn.dataset.active = 'false';
-        updateSearchPlaceholder(); fetchMods();
+        updateSearchPlaceholder(); renderModCategories(); fetchMods();
     });
 });
+renderModCategories();
 
 document.getElementById('mod-search-btn')?.addEventListener('click', () => { currentQuery = modSearchInput?.value?.trim() || ''; currentModPage = 0; fetchMods(); });
 modSearchInput?.addEventListener('keydown', (e) => { if (e.key === 'Enter') { currentQuery = modSearchInput.value.trim(); currentModPage = 0; fetchMods(); } });
@@ -1832,22 +2106,53 @@ async function fetchMods() {
 
     const offset = currentModPage * MODS_PER_PAGE;
 
-    let facets = `[["project_type:${currentModrinthType}"]]`;
+    let facets;
+    const facetGroups = [`["project_type:${currentModrinthType}"]`];
+    let appliedLoader = null;
+    const loaderFamilies = { forge: ['forge'], neoforge: ['neoforge'], fabric: ['fabric', 'quilt'] };
+    const allLoaderTags = ['forge', 'neoforge', 'fabric', 'quilt'];
     if (currentModrinthType === 'mod' && activePack && activePack !== 'Varsayılan') {
         const config = getPackConfig(activePack);
-        const facetGroups = [`["project_type:mod"]`];
         if (config.loader && config.loader !== 'vanilla') {
+            appliedLoader = config.loader;
             let loaderFacet;
             if (config.loader === 'forge') {
-                loaderFacet = `["categories:forge","categories:neoforge"]`;
+                loaderFacet = `["categories:forge"]`;
+            } else if (config.loader === 'neoforge') {
+                loaderFacet = `["categories:neoforge"]`;
             } else if (config.loader === 'fabric') {
                 loaderFacet = `["categories:fabric","categories:quilt"]`;
             } else {
                 loaderFacet = `["categories:${config.loader}"]`;
             }
             facetGroups.push(loaderFacet);
+
+            if (strictLoaderMode) {
+                const allowedFamily = new Set(loaderFamilies[config.loader] || [config.loader]);
+                allLoaderTags.filter(l => !allowedFamily.has(l)).forEach(l => {
+                    facetGroups.push(`["categories!=${l}"]`);
+                });
+            }
         }
-        facets = `[${facetGroups.join(',')}]`;
+    }
+    if (strictLoaderWrap) strictLoaderWrap.style.display = appliedLoader ? 'flex' : 'none';
+    selectedCategories.forEach(cat => {
+        facetGroups.push(`["categories:${cat}"]`);
+    });
+    facets = `[${facetGroups.join(',')}]`;
+
+    const contextBadge = document.getElementById('mod-context-badge');
+    if (contextBadge) {
+        if (currentModrinthType !== 'mod') {
+            contextBadge.innerText = '';
+        } else if (activePack === 'Varsayılan' || !activePack) {
+            contextBadge.innerHTML = `Paket seçilmedi — filtresiz genel arama`;
+        } else if (appliedLoader) {
+            const strictNote = strictLoaderMode ? ` <span style="color:#666;">(kesin)</span>` : '';
+            contextBadge.innerHTML = `📦 <span style="color:#00e676;">${activePack}</span> · Loader filtresi: <span style="color:#00e676;text-transform:capitalize;">${appliedLoader}</span>${strictNote}`;
+        } else {
+            contextBadge.innerHTML = `📦 <span style="color:#00e676;">${activePack}</span> · Loader: Vanilla (filtre uygulanmadı)`;
+        }
     }
 
     let url = `https://api.modrinth.com/v2/search?limit=${MODS_PER_PAGE}&offset=${offset}&facets=${encodeURIComponent(facets)}`;
@@ -1858,6 +2163,16 @@ async function fetchMods() {
         if(pageNextBtn) pageNextBtn.disabled = data.hits.length < MODS_PER_PAGE;
         if(modResultsGrid) modResultsGrid.scrollTop = scrollPos;
     } catch (e) { if(modResultsGrid) modResultsGrid.innerHTML = `<p style="color: #ff4757;">API Error.</p>`; }
+}
+
+function getLoaderBadges(categories) {
+    if (!Array.isArray(categories)) return '';
+    const known = { fabric: '#dbb69b', forge: '#909590', neoforge: '#d7837f', quilt: '#a674e4' };
+    const found = Object.keys(known).filter(l => categories.includes(l));
+    if (found.length === 0) return '';
+    return `<div style="display:flex;gap:4px;flex-wrap:wrap;margin-top:-6px;">${found.map(l =>
+        `<span style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;padding:2px 6px;border-radius:4px;background:${known[l]}22;color:${known[l]};border:1px solid ${known[l]}44;">${l}</span>`
+    ).join('')}</div>`;
 }
 
 function renderMods(mods) {
@@ -1877,6 +2192,8 @@ function renderMods(mods) {
             else if (isInstalled && currentModrinthType === 'mod') btnHtml = `<button class="ms-btn logout-btn" onclick="deleteMod('${mod.project_id}')">${t('btn_delete')}</button>`;
             else btnHtml = `<button class="ms-btn vyra-btn" onclick="openModVersionModal('${mod.project_id}')">${t('btn_download')}</button>`;
         }
+
+        const loaderBadges = currentModrinthType === 'mod' ? getLoaderBadges(mod.categories) : '';
                 
         card.innerHTML = `
             <div class="mod-header" style="cursor:pointer;" onclick="window.openModDetail('${mod.project_id}','${mod.title.replace(/'/g,"\\'")}')">
@@ -1887,8 +2204,94 @@ function renderMods(mods) {
                 </div>
             </div>
             <div class="mod-desc">${mod.description}</div>
+            ${loaderBadges}
             ${btnHtml}`;
         modResultsGrid.appendChild(card);
+    });
+}
+
+const modViewToggle = document.getElementById('mod-view-toggle');
+let modViewMode = localStorage.getItem('minecore_mod_view') || 'grid';
+function applyModViewMode() {
+    if (!modResultsGrid) return;
+    modResultsGrid.classList.toggle('list-view', modViewMode === 'list');
+    modViewToggle?.querySelectorAll('.view-toggle-btn').forEach(b => {
+        b.classList.toggle('active', b.dataset.view === modViewMode);
+    });
+}
+modViewToggle?.querySelectorAll('.view-toggle-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        modViewMode = btn.dataset.view;
+        localStorage.setItem('minecore_mod_view', modViewMode);
+        applyModViewMode();
+    });
+});
+applyModViewMode();
+
+const modDiscoverPanel = document.querySelector('.discover-main');
+const modDropzoneOverlay = document.getElementById('mod-dropzone-overlay');
+let _modDragDepth = 0;
+
+function installDroppedFiles(fileList) {
+    if (currentModrinthType === 'modpack') {
+        showToast("Modpack'ler sürükle-bırak ile değil, İndir butonuyla kurulur.", 'error');
+        return;
+    }
+    if (activePack === 'Varsayılan') {
+        showToast(t('select_pack_first'), 'error');
+        return;
+    }
+
+    const wantExt = currentModrinthType === 'resourcepack' ? '.zip' : '.jar';
+    const targetFolder = currentModrinthType === 'resourcepack' ? 'resourcepacks' : 'mods';
+    const targetDir = path.join(packsDir, activePack, targetFolder);
+    if (!fs.existsSync(targetDir)) fs.mkdirSync(targetDir, { recursive: true });
+
+    let installedCount = 0, skippedCount = 0;
+    for (const file of fileList) {
+        const srcPath = file.path;
+        if (!srcPath) continue;
+        if (path.extname(srcPath).toLowerCase() !== wantExt) { skippedCount++; continue; }
+        try {
+            fs.copyFileSync(srcPath, path.join(targetDir, path.basename(srcPath)));
+            installedCount++;
+        } catch (e) {
+            appendConsole(`Kopyalama hatası (${file.name}): ${e.message}`, 'error');
+        }
+    }
+
+    if (installedCount > 0) {
+        showToast(`${installedCount} dosya yüklendi!`, 'success');
+        if (document.getElementById('btn-show-installed')?.dataset.active === 'true') {
+            document.getElementById('btn-show-installed')?.click();
+        }
+    }
+    if (skippedCount > 0 && installedCount === 0) {
+        showToast(`Sadece ${wantExt} dosyaları buraya bırakılabilir.`, 'error');
+    } else if (skippedCount > 0) {
+        showToast(`${skippedCount} dosya uzantısı uyumsuz olduğu için atlandı.`, 'warn');
+    }
+}
+
+if (modDiscoverPanel) {
+    ['dragenter', 'dragover'].forEach(evt => {
+        modDiscoverPanel.addEventListener(evt, (e) => {
+            e.preventDefault(); e.stopPropagation();
+            if (evt === 'dragenter') _modDragDepth++;
+            modDropzoneOverlay?.classList.add('active');
+        });
+    });
+    modDiscoverPanel.addEventListener('dragleave', (e) => {
+        e.preventDefault(); e.stopPropagation();
+        _modDragDepth--;
+        if (_modDragDepth <= 0) { _modDragDepth = 0; modDropzoneOverlay?.classList.remove('active'); }
+    });
+    modDiscoverPanel.addEventListener('drop', (e) => {
+        e.preventDefault(); e.stopPropagation();
+        _modDragDepth = 0;
+        modDropzoneOverlay?.classList.remove('active');
+        const files = Array.from(e.dataTransfer.files || []);
+        if (files.length) installDroppedFiles(files);
     });
 }
 
@@ -1909,7 +2312,7 @@ window.installModpack = async function(projectId, title) {
     if(modVersionModal) modVersionModal.style.display = 'flex'; 
     if(modVersionConfirm) modVersionConfirm.disabled = true;
     try {
-        const versions = await (await fetch(`https://api.modrinth.com/v2/project/${projectId}/version`)).json();
+        const versions = await (await fetch(`https://api.modrinth.com/v2/project/${projectId}/version?limit=100`)).json();
         window.currentModpackVersions = versions; 
         if (versions.length === 0) { if(modVersionSelect) modVersionSelect.innerHTML = `<option value="">${t('ver_none')}</option>`; } 
         else {
@@ -1942,8 +2345,17 @@ window.openModVersionModal = async function(projectId) {
     if(modVersionConfirm) modVersionConfirm.disabled = true;
 
     try {
-        const urlAll = `https://api.modrinth.com/v2/project/${projectId}/version`;
+        const urlAll = `https://api.modrinth.com/v2/project/${projectId}/version?limit=100`;
         _allProjectVersions = await (await fetch(urlAll)).json();
+
+        if (_allProjectVersions.length === 100) {
+            try {
+                const urlTargeted = `https://api.modrinth.com/v2/project/${projectId}/version?game_versions=["${config.version}"]`;
+                const targeted = await (await fetch(urlTargeted)).json();
+                const existingIds = new Set(_allProjectVersions.map(v => v.id));
+                targeted.forEach(v => { if (!existingIds.has(v.id)) _allProjectVersions.push(v); });
+            } catch(_) {}
+        }
 
         if (!_allProjectVersions || _allProjectVersions.length === 0) {
             if(gvSelect) gvSelect.innerHTML = `<option value="">${t('ver_none')}</option>`;
@@ -2041,7 +2453,8 @@ document.getElementById('mod-version-confirm')?.addEventListener('click', async 
             const mcVersion = versionData.game_versions[0];
             let loader = 'vanilla';
             if (versionData.loaders.includes('fabric')) loader = 'fabric';
-            else if (versionData.loaders.includes('forge') || versionData.loaders.includes('neoforge')) loader = 'forge';
+            else if (versionData.loaders.includes('neoforge')) loader = 'neoforge';
+            else if (versionData.loaders.includes('forge')) loader = 'forge';
             else if (versionData.loaders.includes('quilt')) loader = 'fabric';
 
             let safeTitle = (window.currentModpackTitle || 'Modpack').replace(/[^a-zA-Z0-9 \-_]/g, '').trim() || 'Modpack';
@@ -2318,12 +2731,16 @@ async function autoInstallFabric(gameVersion) {
 
         if (!loaderData || loaderData.length === 0) throw new Error(`Fabric için uyumlu MC sürümü bulunamadı.`);
 
-        const loaderVer = loaderData[0].loader.version;
+        const latestEntry = loaderData.find(e => e.loader && e.loader.stable) || loaderData[0];
+        const loaderVer = latestEntry.loader.version;
         const fName = `fabric-loader-${loaderVer}-${gameVersion}`;
         const tDir = path.join(originalPath, 'versions', fName);
+        const jsonPath = path.join(tDir, `${fName}.json`);
+        if (fs.existsSync(jsonPath)) return fName;
         if (!fs.existsSync(tDir)) fs.mkdirSync(tDir, { recursive: true });
         const profileJson = await (await fetch(`https://meta.fabricmc.net/v2/versions/loader/${gameVersion}/${loaderVer}/profile/json`)).json();
-        fs.writeFileSync(path.join(tDir, `${fName}.json`), JSON.stringify(profileJson, null, 2));
+        fs.writeFileSync(jsonPath, JSON.stringify(profileJson, null, 2));
+        appendConsole(`Fabric Loader ${loaderVer} kuruldu.`, 'info');
         return fName;
     } catch (e) { throw e; }
 }
@@ -2334,16 +2751,28 @@ async function autoInstallForge(gameVersion) {
     let forgeVersion = null;
     let resolvedMcVersion = gameVersion;
 
-    const tryGetForgeVersion = async (mcVer) => {
+    const findForgeVersion = async (mcVer) => {
         try {
-            const promos = await (await fetch(`https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json`)).json();
-            return promos.promos[`${mcVer}-recommended`] || promos.promos[`${mcVer}-latest`] || null;
+            const xml = await (await fetch(`https://maven.minecraftforge.net/net/minecraftforge/forge/maven-metadata.xml`)).text();
+            const matches = [...xml.matchAll(/<version>([^<]+)<\/version>/g)].map(m => m[1]);
+            const compatible = matches.filter(v => v.startsWith(mcVer + '-'));
+            if (compatible.length === 0) return null;
+            compatible.sort((a, b) => {
+                const na = a.split('-')[1]?.split('.').map(Number) || [];
+                const nb = b.split('-')[1]?.split('.').map(Number) || [];
+                for (let i = 0; i < Math.max(na.length, nb.length); i++) {
+                    const diff = (nb[i]||0) - (na[i]||0);
+                    if (diff !== 0) return diff;
+                }
+                return 0;
+            });
+            return compatible[0];
         } catch(_) { return null; }
     };
 
-    forgeVersion = await tryGetForgeVersion(gameVersion);
+    let fullForgeVer = await findForgeVersion(gameVersion);
 
-    if (!forgeVersion) {
+    if (!fullForgeVer) {
         if(statusText) statusText.innerText = `Forge: ${gameVersion} için uyumlu sürüm aranıyor...`;
         try {
             const manifest = await (await fetch('https://launchermeta.mojang.com/mc/game/version_manifest_v2.json')).json();
@@ -2362,40 +2791,40 @@ async function autoInstallForge(gameVersion) {
                     return 0;
                 });
             for (const candidate of candidates) {
-                const ver = await tryGetForgeVersion(candidate);
-                if (ver) { forgeVersion = ver; resolvedMcVersion = candidate; break; }
+                const ver = await findForgeVersion(candidate);
+                if (ver) { fullForgeVer = ver; resolvedMcVersion = candidate; break; }
             }
         } catch(_) {}
     }
 
-    if (!forgeVersion) {
-        try {
-            const meta = await (await fetch(`https://files.minecraftforge.net/net/minecraftforge/forge/maven-metadata.json`)).json();
-            const versions = meta[resolvedMcVersion];
-            if (versions && versions.length > 0) forgeVersion = versions[versions.length - 1];
-        } catch(_) {}
-    }
+    if (!fullForgeVer) throw new Error(`Forge ${resolvedMcVersion} için sürüm bulunamadı.`);
 
-    if (!forgeVersion) throw new Error(`Forge ${resolvedMcVersion} için sürüm bulunamadı.`);
-    if(statusText) statusText.innerText = `Forge ${resolvedMcVersion}-${forgeVersion} kuruluyor...`;
+    const mcPart = fullForgeVer.split('-')[0];
+    const forgePart = fullForgeVer.split('-').slice(1).join('-');
+    if(statusText) statusText.innerText = `Forge ${fullForgeVer} kuruluyor...`;
 
-    const fullForgeVer = `${resolvedMcVersion}-${forgeVersion}`;
     const installerName = `forge-${fullForgeVer}-installer.jar`;
     const installerUrl = `https://maven.minecraftforge.net/net/minecraftforge/forge/${fullForgeVer}/${installerName}`;
     const installerPath = path.join(originalPath, installerName);
 
     await downloadFile(installerUrl, installerPath);
 
-    const requiredJava = getRequiredJavaVersion(resolvedMcVersion);
+    const requiredJava = getRequiredJavaVersion(mcPart || resolvedMcVersion);
     if(statusText) statusText.innerText = `Java ${requiredJava} kontrol ediliyor...`;
     const javaExe = await ensureJava(requiredJava);
 
     if(statusText) statusText.innerText = `Forge kuruluyor... (bu biraz sürebilir)`;
     await new Promise((resolve, reject) => {
         const { spawn } = require('child_process');
-        const proc = spawn(javaExe, ['-jar', installerPath, '--installClient', originalPath], {
+        const proc = spawn(javaExe, [
+            '-Djava.awt.headless=true',
+            '-jar', installerPath,
+            '--installClient'
+        ], {
             cwd: originalPath, stdio: ['ignore', 'pipe', 'pipe']
         });
+        proc.stdout?.on('data', (d) => appendConsole(`[Forge] ${d.toString().trim()}`, 'info'));
+        proc.stderr?.on('data', (d) => appendConsole(`[Forge] ${d.toString().trim()}`, 'warn'));
         proc.on('close', (code) => {
             if (fs.existsSync(installerPath)) fs.unlinkSync(installerPath);
             if (code === 0) resolve();
@@ -2407,9 +2836,70 @@ async function autoInstallForge(gameVersion) {
         });
     });
 
-    const forgeRegex = new RegExp(`forge[^\\d]*${resolvedMcVersion.replace(/\./g,'\\.')}[-_]`);
-    const installed = fs.readdirSync(path.join(originalPath, 'versions')).find(f => forgeRegex.test(f));
+    const escapedMc = (mcPart||resolvedMcVersion).replace(/\./g,'\\.');
+    const forgeRegex = new RegExp(`(forge[^\\d]*${escapedMc}[-_]|${escapedMc}[-_]forge[-_])`);
     if (!installed) throw new Error('Forge kuruldu ama version klasörü bulunamadı.');
+    return installed;
+}
+
+async function autoInstallNeoForge(gameVersion) {
+    if(statusText) statusText.innerText = `NeoForge ${gameVersion} ${t('status_downloading')}...`;
+
+    let neoVersion = null;
+    let resolvedMcVersion = gameVersion;
+
+    const tryGetNeoVersion = async (mcVer) => {
+        try {
+            const meta = await (await fetch(`https://maven.neoforged.net/releases/net/neoforged/neoforge/maven-metadata.xml`)).text();
+            const matches = [...meta.matchAll(/<version>([^<]+)<\/version>/g)].map(m => m[1]);
+            const mcShort = mcVer.split('.').slice(1).join('.');
+            const compatible = matches.filter(v => v.startsWith(mcShort + '.'));
+            return compatible.length > 0 ? compatible[compatible.length - 1] : null;
+        } catch(_) { return null; }
+    };
+
+    neoVersion = await tryGetNeoVersion(gameVersion);
+
+    if (!neoVersion) throw new Error(`NeoForge ${gameVersion} için sürüm bulunamadı.`);
+
+    if(statusText) statusText.innerText = `NeoForge ${neoVersion} kuruluyor...`;
+
+    const installerName = `neoforge-${neoVersion}-installer.jar`;
+    const installerUrl = `https://maven.neoforged.net/releases/net/neoforged/neoforge/${neoVersion}/${installerName}`;
+    const installerPath = path.join(originalPath, installerName);
+
+    await downloadFile(installerUrl, installerPath);
+
+    const requiredJava = getRequiredJavaVersion(resolvedMcVersion);
+    if(statusText) statusText.innerText = `Java ${requiredJava} kontrol ediliyor...`;
+    const javaExe = await ensureJava(requiredJava);
+
+    if(statusText) statusText.innerText = `NeoForge kuruluyor... (bu biraz sürebilir)`;
+    await new Promise((resolve, reject) => {
+        const { spawn } = require('child_process');
+        const proc = spawn(javaExe, [
+            '-Djava.awt.headless=true',
+            '-jar', installerPath,
+            '--installClient'
+        ], {
+            cwd: originalPath, stdio: ['ignore', 'pipe', 'pipe']
+        });
+        proc.stdout?.on('data', (d) => appendConsole(`[NeoForge] ${d.toString().trim()}`, 'info'));
+        proc.stderr?.on('data', (d) => appendConsole(`[NeoForge] ${d.toString().trim()}`, 'warn'));
+        proc.on('close', (code) => {
+            if (fs.existsSync(installerPath)) fs.unlinkSync(installerPath);
+            if (code === 0) resolve();
+            else reject(new Error(`NeoForge installer hata kodu: ${code}`));
+        });
+        proc.on('error', (err) => {
+            if (fs.existsSync(installerPath)) fs.unlinkSync(installerPath);
+            reject(err);
+        });
+    });
+
+    const neoRegex = new RegExp(`neoforge[^\\d]*${neoVersion.replace(/\./g,'\\.')}`);
+    const installed = fs.readdirSync(path.join(originalPath, 'versions')).find(f => neoRegex.test(f));
+    if (!installed) throw new Error('NeoForge kuruldu ama version klasörü bulunamadı.');
     return installed;
 }
 
@@ -2420,29 +2910,88 @@ playButton?.addEventListener('click', async () => {
         return;
     }
 
+    if (activeAcc.type === 'ms') {
+        if (statusText) statusText.innerText = 'Hesap doğrulanıyor...';
+        try {
+            const refreshed = await ipcRenderer.invoke('ms-refresh', activeAcc.data);
+            if (refreshed?.ok) {
+                activeAcc.data = refreshed.data;
+                activeAcc.name = refreshed.data.name || activeAcc.name;
+                localStorage.setItem('minecore_accounts', JSON.stringify(accounts));
+            } else {
+                if (statusText) statusText.innerText = t('status_error') + 'Microsoft oturumu sona erdi, lütfen hesabı yeniden ekleyin.';
+                showToast('Microsoft oturumu sona erdi, lütfen hesabı yeniden ekleyin.', 'error', 6000);
+                return;
+            }
+        } catch (e) {
+            console.error('MS token yenileme başarısız:', e);
+        }
+    }
+
     let baseVer = selectedVersionValue, customLoader = null, gameDir = originalPath; 
 
     if (baseVer.startsWith('PACK:')) {
         const packName = baseVer.replace('PACK:', ''), config = getPackConfig(packName); baseVer = config.version; gameDir = path.join(packsDir, packName); 
         syncSettings(gameDir);
         const fabricRegex = new RegExp(`fabric[^\\d]*[\\d.]+[-_]${baseVer.replace(/\./g, '\\.')}$`);
-        const forgeRegex = new RegExp(`forge[^\\d]*${baseVer.replace(/\./g, '\\.')}[-_]`);
+        const escapedBaseVer = baseVer.replace(/\./g, '\\.');
+        const forgeRegex = new RegExp(`(forge[^\\d]*${escapedBaseVer}[-_]|${escapedBaseVer}[-_]forge[-_])`);
         if (config.loader === 'fabric') {
-            customLoader = fs.readdirSync(path.join(originalPath, 'versions'))
-                .find(f => fabricRegex.test(f));
-            if (!customLoader) { 
-                if(statusText) statusText.innerText = `Fabric ${baseVer} ${t('status_downloading')}...`; 
-                try { customLoader = await autoInstallFabric(baseVer); loadAllVersions(); } catch (e) { if(statusText) statusText.innerText = t('status_fabric_err'); if(playButton) playButton.disabled = false; window._gameRunning = false; return; } 
+            const fabricLoaderNum = (name) => (name.match(/fabric[^\d]*([\d.]+)[-_]/) || [])[1] || '0';
+            const cmpVer = (a, b) => {
+                const pa = a.split('.').map(Number), pb = b.split('.').map(Number);
+                for (let i = 0; i < Math.max(pa.length, pb.length); i++) {
+                    const d = (pb[i] || 0) - (pa[i] || 0);
+                    if (d !== 0) return d;
+                }
+                return 0;
+            };
+            const installedFabric = fs.readdirSync(path.join(originalPath, 'versions'))
+                .filter(f => fabricRegex.test(f))
+                .sort((a, b) => cmpVer(fabricLoaderNum(a), fabricLoaderNum(b)));
+            if(statusText) statusText.innerText = `Fabric ${baseVer} güncellemeleri kontrol ediliyor...`;
+            try {
+                customLoader = await autoInstallFabric(baseVer);
+                loadAllVersions();
+            } catch (e) {
+                if (installedFabric.length > 0) {
+                    customLoader = installedFabric[0];
+                    appendConsole('Fabric güncellemesi kontrol edilemedi, kurulu sürüm kullanılıyor: ' + customLoader, 'warn');
+                } else {
+                    if(statusText) statusText.innerText = t('status_fabric_err'); if(playButton) playButton.disabled = false; window._gameRunning = false; return;
+                }
             }
         } else if (config.loader === 'forge') {
-            customLoader = fs.readdirSync(path.join(originalPath, 'versions'))
-                .find(f => forgeRegex.test(f));
+            customLoader = fs.readdirSync(path.join(originalPath, 'versions')).find(f => forgeRegex.test(f));
+            if (customLoader) {
+                const secureJarDir = path.join(originalPath, 'libraries', 'cpw', 'mods', 'securejarhandler');
+                const hasJar = fs.existsSync(secureJarDir) &&
+                    fs.readdirSync(secureJarDir).some(f => f.endsWith('.jar'));
+                if (!hasJar) {
+                    appendConsole('Forge kurulumu eksik (securejarhandler.jar bulunamadı), yeniden kuruluyor...', 'warn');
+                    customLoader = null;
+                }
+            }
             if (!customLoader) {
                 if(statusText) statusText.innerText = `Forge ${baseVer} ${t('status_downloading')}...`;
-                try { customLoader = await autoInstallForge(baseVer); loadAllVersions(); } catch (e) { if(statusText) statusText.innerText = t('status_forge_err'); if(playButton) playButton.disabled = false; window._gameRunning = false; return; }
+                try { customLoader = await autoInstallForge(baseVer); loadAllVersions(); } catch (e) {
+                    appendConsole(`Forge kurulum hatası: ${e.message}`, 'error');
+                    if(statusText) statusText.innerText = `Forge kurulum hatası: ${e.message}`;
+                    if(playButton) playButton.disabled = false; window._gameRunning = false; return;
+                }
+            }
+        } else if (config.loader === 'neoforge') {
+            customLoader = fs.readdirSync(path.join(originalPath, 'versions')).find(f => neoforgeRegex.test(f));
+            if (!customLoader) {
+                if(statusText) statusText.innerText = `NeoForge ${baseVer} ${t('status_downloading')}...`;
+                try { customLoader = await autoInstallNeoForge(baseVer); loadAllVersions(); } catch (e) {
+                    appendConsole(`NeoForge kurulum hatası: ${e.message}`, 'error');
+                    if(statusText) statusText.innerText = `NeoForge kurulum hatası: ${e.message}`;
+                    if(playButton) playButton.disabled = false; window._gameRunning = false; return;
+                }
             }
         }
-    } else if (baseVer.toLowerCase().match(/forge|fabric|optifine/)) {
+    } else if (baseVer.toLowerCase().match(/forge|fabric|optifine|neoforge/)) {
         const jsonPath = path.join(originalPath, 'versions', baseVer, `${baseVer}.json`);
         if(fs.existsSync(jsonPath)) { baseVer = JSON.parse(fs.readFileSync(jsonPath)).inheritsFrom || baseVer; customLoader = selectedVersionValue; }
     }
@@ -2473,20 +3022,49 @@ playButton?.addEventListener('click', async () => {
         try {
             if(statusText) statusText.innerText = 'Ely.by skin sistemi hazırlanıyor...';
             const injectorPath = path.join(originalPath, 'authlib-injector.jar');
-            if (!fs.existsSync(injectorPath)) {
-                appendConsole('authlib-injector indiriliyor...', 'info');
-                await downloadFile('https://authlib-injector.yushi.moe/artifact/latest.json', path.join(originalPath, '_ai_meta.json'));
-                const meta = JSON.parse(fs.readFileSync(path.join(originalPath, '_ai_meta.json')));
-                await downloadFile(meta.download_url, injectorPath);
-                fs.unlinkSync(path.join(originalPath, '_ai_meta.json'));
-                appendConsole(`authlib-injector indirildi: v${meta.version}`, 'success');
+            const injectorVerPath = path.join(originalPath, 'authlib-injector.version');
+            const metaPath = path.join(originalPath, '_ai_meta.json');
+            try {
+                await downloadFile('https://authlib-injector.yushi.moe/artifact/latest.json', metaPath);
+                const meta = JSON.parse(fs.readFileSync(metaPath));
+                const installedVer = fs.existsSync(injectorVerPath) ? fs.readFileSync(injectorVerPath, 'utf8').trim() : '';
+                if (!fs.existsSync(injectorPath) || installedVer !== String(meta.version)) {
+                    appendConsole(`authlib-injector indiriliyor (v${meta.version})...`, 'info');
+                    await downloadFile(meta.download_url, injectorPath);
+                    fs.writeFileSync(injectorVerPath, String(meta.version));
+                    appendConsole(`authlib-injector güncellendi: v${meta.version}`, 'success');
+                }
+            } catch (netErr) {
+                if (!fs.existsSync(injectorPath)) throw netErr;
+                appendConsole('authlib-injector güncellemesi kontrol edilemedi, mevcut sürüm kullanılıyor.', 'warn');
+            } finally {
+                try { if (fs.existsSync(metaPath)) fs.unlinkSync(metaPath); } catch (_) {}
             }
             if (!fs.existsSync(injectorPath) || fs.statSync(injectorPath).size < 1000) {
                 throw new Error('İndirilen authlib-injector.jar dosyası bozuk veya eksik.');
             }
-            elybyJvmArgs = [`-javaagent:${injectorPath}=ely.by`];
-            appendConsole(`JVM agent eklendi: -javaagent:${injectorPath}=ely.by`, 'success');
-            showConsole();
+            const ELY_API_ROOT = 'https://authserver.ely.by/api/authlib-injector';
+            elybyJvmArgs = [`-javaagent:${injectorPath}=${ELY_API_ROOT}`, '-Dauthlibinjector.debug'];
+            appendConsole(`JVM agent eklendi: -javaagent:${injectorPath}=${ELY_API_ROOT}`, 'success');
+
+            try {
+                const uuidNoDash = String(activeAcc.data.uuid || '').replace(/-/g, '');
+                const pr = await fetch(`https://authserver.ely.by/session/profile/${uuidNoDash}`);
+                if (pr.status === 200) {
+                    const pj = await pr.json();
+                    const texProp = (pj.properties || []).find(x => x.name === 'textures');
+                    const texData = texProp ? JSON.parse(Buffer.from(texProp.value, 'base64').toString('utf8')) : null;
+                    if (texData && texData.textures && texData.textures.SKIN) {
+                        appendConsole('Ely.by skin bulundu, oyunda görünmesi gerekiyor: ' + texData.textures.SKIN.url, 'success');
+                    } else {
+                        appendConsole('Ely.by hesabında yüklü bir skin yok. Skini account.ely.by adresinden yükle.', 'warn');
+                    }
+                } else {
+                    appendConsole(`Ely.by profil sorgusu başarısız (HTTP ${pr.status}). UUID: ${uuidNoDash}`, 'warn');
+                }
+            } catch (profErr) {
+                appendConsole('Ely.by skin sorgusu yapılamadı: ' + profErr.message, 'warn');
+            }
         } catch(e) {
             appendConsole(`authlib-injector hatası: ${e.message}`, 'error');
             showToast('Ely.by skin sistemi yüklenemedi: ' + e.message, 'error', 6000);
@@ -2496,77 +3074,197 @@ playButton?.addEventListener('click', async () => {
         }
     }
 
+    const isForgeLoader = customLoader && customLoader.toLowerCase().match(/forge|neoforge/);
+
     const opts = {
         authorization: activeAcc.type === 'ms' ? activeAcc.data :
                       activeAcc.type === 'elyby' ? { access_token: activeAcc.data.access_token, client_token: activeAcc.data.client_token || 'minecore-launcher', uuid: activeAcc.data.uuid, name: activeAcc.data.name, user_properties: '{}', meta: { type: 'legacy' } } :
                       Authenticator.getAuth(activeAcc.name),
         root: originalPath,
-        version: { number: baseVer, type: "release", custom: customLoader },
+        version: { number: baseVer, type: isForgeLoader ? 'release' : 'release', custom: customLoader },
         memory: { max: maxRamInput ? maxRamInput.value : '4G', min: minRamInput ? minRamInput.value : '2G' },
         overrides: {
             gameDirectory: gameDir,
-            ...(elybyJvmArgs.length > 0 ? { jvm: elybyJvmArgs } : {})
+            jvm: [
+                '-Djava.awt.headless=false',
+                '-Dfml.ignoreInvalidMinecraftCertificates=true',
+                '-Dfml.ignorePatchDiscrepancies=true',
+                '--add-opens', 'java.base/java.lang.invoke=ALL-UNNAMED',
+                '--add-opens', 'java.base/java.lang=ALL-UNNAMED',
+                '--add-opens', 'java.base/java.util=ALL-UNNAMED',
+                '--add-opens', 'java.base/java.net=ALL-UNNAMED',
+                '--add-opens', 'java.base/sun.security.util=ALL-UNNAMED',
+                '--add-exports', 'java.base/sun.security.util=ALL-UNNAMED',
+                ...elybyJvmArgs
+            ]
         },
-        javaPath: finalJavaPath
+        javaPath: finalJavaPath,
+        customArgs: elybyJvmArgs
     };
 
     if(statusText) statusText.innerText = t('status_launching'); let gameStarted = false;
     window._lastGameDir = gameDir;
+    window._sessionStartTime = Date.now();
+    snapshotCrashReports(gameDir);
+    appendConsole(`Oyun başlatılıyor: ${baseVer} (loader: ${customLoader || 'vanilla'})`, 'info');
     launcher.removeAllListeners();
     launcher.launch(opts);
     launcher.on('download-status', (e) => { if(statusText) statusText.innerText = `${t('status_dl_progress')}: ${e.type} - %${Math.round((e.current / e.total) * 100)}`; });
-    launcher.on('data', () => { if (!gameStarted) { gameStarted = true; if(statusText) statusText.innerText = t('status_opened'); startPlaytimeTracking(selectedVersionValue.startsWith('PACK:') ? selectedVersionValue.replace('PACK:','') : selectedVersionValue); showConsole(); setTimeout(() => ipcRenderer.send('hide-window'), 1000); } });
-    launcher.on('error', (e) => { if(statusText) statusText.innerText = t('status_error') + e; if(playButton) playButton.disabled = false; window._gameRunning = false; ipcRenderer.send('show-window'); });
-    launcher.on('close', () => {
-        if(statusText) statusText.innerText = t('status_ready');
+    launcher.on('data', (line) => {
+        appendConsole(typeof line === 'string' ? line : String(line), 'info');
+        if (!gameStarted) {
+            gameStarted = true;
+            if(statusText) statusText.innerText = t('status_opened');
+            startPlaytimeTracking(selectedVersionValue.startsWith('PACK:') ? selectedVersionValue.replace('PACK:','') : selectedVersionValue);
+            setTimeout(() => ipcRenderer.send('hide-window'), 1000);
+        }
+    });
+    launcher.on('error', (e) => {
+        appendConsole(`HATA: ${e}`, 'error');
+        if(statusText) statusText.innerText = t('status_error') + e;
         if(playButton) playButton.disabled = false; window._gameRunning = false;
         ipcRenderer.send('show-window');
+    });
+    launcher.on('close', () => {
+        stopPlaytimeTracking();
+        if(statusText) statusText.innerText = t('status_ready');
+        if(playButton) playButton.disabled = false; window._gameRunning = false;
+        { const _co = document.getElementById('console-overlay'); if (_co) _co.style.display = 'none'; }
+        ipcRenderer.send('show-window');
+        loadPacks();
+        if (selectedVersionValue) {
+            const ptKey = selectedVersionValue.startsWith('PACK:') ? selectedVersionValue.replace('PACK:','') : selectedVersionValue;
+            const ptEl = document.getElementById('version-playtime');
+            const pt = getPlaytime(ptKey);
+            if (ptEl) {
+                if (pt) { ptEl.innerHTML = `<svg viewBox="0 0 24 24" width="14" height="14" stroke="#00e676" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg><span>${t('playtime_label')}:</span><span style="color:#e6edf3;font-weight:700;">${pt}</span>`; ptEl.style.display = 'flex'; }
+                else ptEl.style.display = 'none';
+            }
+        }
+        
+        setTimeout(() => checkCrashReports(window._lastGameDir || originalPath), 1500);
     });
 });
 
 loadAllVersions(); fetchMods();
-document.getElementById('btn-show-installed')?.addEventListener('click', () => {
+document.getElementById('btn-show-installed')?.addEventListener('click', async () => {
     const btn = document.getElementById('btn-show-installed');
     if (btn) btn.dataset.active = 'true';
     if (activePack === 'Varsayılan') {
         if(modResultsGrid) modResultsGrid.innerHTML = `<p style="color: #ff4757; padding: 10px;">${t('select_pack_first')}</p>`;
         return;
     }
-    
+
     let targetFolder = currentModrinthType === 'resourcepack' ? 'resourcepacks' : 'mods';
     const targetDir = path.join(packsDir, activePack, targetFolder);
-    
-    if(modResultsGrid) modResultsGrid.innerHTML = '';
+
+    if(modResultsGrid) modResultsGrid.innerHTML = `<p style="color:#aaa;padding:10px;">${t('loading')}</p>`;
     if(pageIndicator) pageIndicator.innerText = '-';
-    
+
     if (!fs.existsSync(targetDir)) {
-         modResultsGrid.innerHTML = `<p style="color: #aaa; padding: 10px;">${t('installed_empty')}</p>`;
-         return;
+        modResultsGrid.innerHTML = `<p style="color:#aaa;padding:10px;">${t('installed_empty')}</p>`;
+        return;
     }
-    
+
     const files = fs.readdirSync(targetDir).filter(f => f.endsWith('.jar') || f.endsWith('.zip'));
     if (files.length === 0) {
-         modResultsGrid.innerHTML = `<p style="color: #aaa; padding: 10px;">${t('installed_empty')}</p>`;
-         return;
+        modResultsGrid.innerHTML = `<p style="color:#aaa;padding:10px;">${t('installed_empty')}</p>`;
+        return;
     }
-    
-    files.forEach(file => {
-         const card = document.createElement('div');
-         card.className = 'mod-card';
-         const safeFile = file.replace(/'/g, "\\'");
-         card.innerHTML = `
-            <div class="mod-header">
-                <div class="mod-icon" style="display:flex; justify-content:center; align-items:center; font-size:24px; background: rgba(255,255,255,0.05);">📦</div>
-                <div style="overflow: hidden;">
-                    <div class="mod-title" style="white-space: normal; word-break: break-all; font-size:13px;">${file}</div>
-                    <div class="mod-author">${t('installed_local_file')}</div>
+
+    modResultsGrid.innerHTML = '';
+    const installedMods = getInstalledMods();
+    const config = getPackConfig(activePack);
+
+    for (const file of files) {
+        const card = document.createElement('div');
+        card.className = 'mod-card';
+        const safeFile = file.replace(/'/g, "\\'");
+        const safeDirEsc = targetDir.replace(/\\/g, '\\\\');
+
+        const projId = Object.keys(installedMods).find(k => installedMods[k] === file && !k.startsWith('local__'));
+
+        if (projId) {
+            card.innerHTML = `
+                <div class="mod-header">
+                    <div class="mod-icon" style="display:flex;justify-content:center;align-items:center;font-size:18px;background:rgba(255,255,255,0.05);">⏳</div>
+                    <div style="overflow:hidden;">
+                        <div class="mod-title" style="font-size:13px;">${file}</div>
+                        <div class="mod-author" style="color:#555;">${t('loading')}</div>
+                    </div>
                 </div>
-            </div>
-            <div class="mod-desc">${t('installed_file_desc')}</div>
-            <button class="ms-btn logout-btn" onclick="deletePhysicalFile('${targetDir.replace(/\\/g, '\\\\')}', '${safeFile}')">${t('btn_delete_file')}</button>
-         `;
-         modResultsGrid.appendChild(card);
-    });
+                <div class="mod-desc" style="color:#555;">—</div>
+                <button class="ms-btn logout-btn" onclick="deletePhysicalFile('${safeDirEsc}','${safeFile}')">${t('btn_delete_file')}</button>`;
+            modResultsGrid.appendChild(card);
+
+            (async () => {
+                try {
+                    const [project, allVersions] = await Promise.all([
+                        fetch(`https://api.modrinth.com/v2/project/${projId}`).then(r => r.json()),
+                        fetch(`https://api.modrinth.com/v2/project/${projId}/version?limit=100`).then(r => r.json())
+                    ]);
+
+                    let candidates = allVersions.filter(v =>
+                        v.game_versions.includes(config.version) &&
+                        (config.loader === 'vanilla' || v.loaders.includes(config.loader) || (config.loader === 'neoforge' && v.loaders.includes('forge')) || (config.loader === 'forge' && v.loaders.includes('neoforge')))
+                    );
+                    if (candidates.length === 0) candidates = allVersions.filter(v => v.game_versions.includes(config.version));
+                    if (candidates.length === 0 && config.loader !== 'vanilla') candidates = allVersions.filter(v => v.loaders.includes(config.loader));
+
+                    const latest = candidates[0];
+                    const latestFile = latest?.files?.find(f => f.primary) || latest?.files?.[0];
+                    const isUpToDate = latestFile?.filename === file;
+                    const latestName = latest?.name || '—';
+
+                    card.innerHTML = `
+                        <div class="mod-header" style="cursor:pointer;" onclick="window.openModDetail('${projId}','${(project.title||file).replace(/'/g,"\\'")}')">
+                            <img src="${project.icon_url||''}" class="mod-icon" onerror="this.src='https://via.placeholder.com/48';this.onerror=null;">
+                            <div style="overflow:hidden;flex:1;">
+                                <div class="mod-title" style="font-size:13px;">${project.title || file}</div>
+                                <div class="mod-author">${(project.author || '')}</div>
+                            </div>
+                            ${isUpToDate
+                                ? `<span style="font-size:10px;background:rgba(0,230,118,0.1);color:#00e676;border:1px solid rgba(0,230,118,0.25);padding:2px 7px;border-radius:4px;white-space:nowrap;">✓ Güncel</span>`
+                                : `<span style="font-size:10px;background:rgba(255,179,0,0.1);color:#ffb300;border:1px solid rgba(255,179,0,0.25);padding:2px 7px;border-radius:4px;white-space:nowrap;">↑ Güncelle</span>`}
+                        </div>
+                        <div class="mod-desc" style="font-size:11px;color:#666;">
+                            ${t('installed_version')}: <span style="color:#aaa;">${file}</span><br>
+                            ${t('installed_latest')}: <span style="color:${isUpToDate ? '#00e676' : '#ffb300'};">${latestName}</span>
+                        </div>
+                        <div style="display:flex;gap:8px;">
+                            ${!isUpToDate && latestFile ? `<button class="ms-btn vyra-btn" style="flex:1;font-size:11px;" onclick="(async()=>{
+                                const oldP=path.join('${safeDirEsc}','${safeFile}');
+                                if(fs.existsSync(oldP))fs.unlinkSync(oldP);
+                                fs.writeFileSync(path.join('${safeDirEsc}','${latestFile.filename.replace(/'/g,"\\'")}'),Buffer.from(await(await fetch('${latestFile.url}')).arrayBuffer()));
+                                saveInstalledMod('${projId}','${latestFile.filename.replace(/'/g,"\\'")}');
+                                showToast('Güncellendi!','success');
+                                document.getElementById('btn-show-installed').click();
+                            })()">${t('btn_update')}</button>` : ''}
+                            <button class="ms-btn logout-btn" style="flex:1;font-size:11px;" onclick="deletePhysicalFile('${safeDirEsc}','${safeFile}')">${t('btn_delete_file')}</button>
+                        </div>`;
+                } catch(e) {
+                    card.innerHTML = `
+                        <div class="mod-header">
+                            <div class="mod-icon" style="display:flex;justify-content:center;align-items:center;font-size:18px;background:rgba(255,255,255,0.05);">📦</div>
+                            <div style="overflow:hidden;"><div class="mod-title" style="font-size:13px;">${file}</div></div>
+                        </div>
+                        <button class="ms-btn logout-btn" onclick="deletePhysicalFile('${safeDirEsc}','${safeFile}')">${t('btn_delete_file')}</button>`;
+                }
+            })();
+        } else {
+            card.innerHTML = `
+                <div class="mod-header">
+                    <div class="mod-icon" style="display:flex;justify-content:center;align-items:center;font-size:24px;background:rgba(255,255,255,0.05);">📦</div>
+                    <div style="overflow:hidden;">
+                        <div class="mod-title" style="white-space:normal;word-break:break-all;font-size:13px;">${file}</div>
+                        <div class="mod-author">${t('installed_local_file')}</div>
+                    </div>
+                </div>
+                <div class="mod-desc">${t('installed_file_desc')}</div>
+                <button class="ms-btn logout-btn" onclick="deletePhysicalFile('${safeDirEsc}','${safeFile}')">${t('btn_delete_file')}</button>`;
+            modResultsGrid.appendChild(card);
+        }
+    }
 });
 
 window.deletePhysicalFile = function(dir, file) {

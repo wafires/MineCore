@@ -1,8 +1,3 @@
-// Bu script `npm run build` öncesinde otomatik çalışır (package.json -> scripts.prebuild).
-// .env dosyasındaki gizli değerleri okuyup config.generated.json'a yazar.
-// electron-builder bu dosyayı paketin içine gömer, böylece dağıttığın .exe
-// kullanıcı tarafında hiçbir .env kurulumu gerektirmeden çalışır.
-
 const fs = require('fs');
 const path = require('path');
 
@@ -16,8 +11,6 @@ if (!fs.existsSync(envPath)) {
     process.exit(1);
 }
 
-// Basit .env parse — dış paket gerektirmez (dotenv zaten runtime'da kullanılıyor,
-// burada sadece build script'i için minik bir parser yeterli)
 const envContent = fs.readFileSync(envPath, 'utf-8');
 const env = {};
 envContent.split('\n').forEach(line => {

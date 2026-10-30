@@ -1,12 +1,13 @@
 require('dotenv').config();
 const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
-const { Auth } = require('msmc');
+const { Auth, tokenUtils } = require('msmc');
 const remoteMain = require('@electron/remote/main');
 
 remoteMain.initialize();
 
 let mainWindow;
+let windowedFullscreen = false;
 
 function createWindow() {
     mainWindow = new BrowserWindow({
@@ -15,22 +16,29 @@ function createWindow() {
         minWidth: 1000,
         minHeight: 700,
         autoHideMenuBar: true,
+        frame: false,
         icon: path.join(__dirname, 'assets/icon.ico'),
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,
-            enableRemoteModule: true
+            enableRemoteModule: true,
+            backgroundThrottling: false
         }
     });
 
     mainWindow.webContents.on('did-finish-load', () => {
         mainWindow.webContents.executeJavaScript(`localStorage.getItem('minecore_windowed_fullscreen')`)
             .then(result => {
-                if (result === 'true') {
+                windowedFullscreen = result === 'true';
+                if (windowedFullscreen) {
                     mainWindow.maximize();
                 }
             }).catch(err => console.log("Pencere modu okuma hatası:", err));
     });
+
+    mainWindow.on('maximize', () => mainWindow.webContents.send('win-maximized', true));
+    mainWindow.on('unmaximize', () => mainWindow.webContents.send('win-maximized', false));
+    mainWindow.webContents.on('did-finish-load', () => mainWindow.webContents.send('win-maximized', mainWindow.isMaximized()));
 
     mainWindow.loadFile('index.html');
     remoteMain.enable(mainWindow.webContents);
@@ -47,15 +55,30 @@ app.on('window-all-closed', function () {
     if (process.platform !== 'darwin') app.quit();
 });
 
+ipcMain.on('win-minimize', () => { if (mainWindow) mainWindow.minimize(); });
+ipcMain.on('win-toggle-maximize', () => {
+    if (!mainWindow) return;
+    if (mainWindow.isMaximized()) mainWindow.unmaximize(); else mainWindow.maximize();
+});
+ipcMain.on('win-close', () => { if (mainWindow) mainWindow.close(); });
+
 ipcMain.on('hide-window', () => {
     if (mainWindow) mainWindow.hide();
 });
 
 ipcMain.on('show-window', () => {
-    if (mainWindow) mainWindow.show();
+    if (mainWindow) {
+        if (mainWindow.isMinimized()) mainWindow.restore();
+        if (windowedFullscreen && !mainWindow.isMaximized()) mainWindow.maximize();
+        mainWindow.show();
+        mainWindow.focus();
+        mainWindow.setAlwaysOnTop(true);
+        setTimeout(() => { if(mainWindow) mainWindow.setAlwaysOnTop(false); }, 500);
+    }
 });
 
 ipcMain.on('toggle-windowed-fullscreen', (event, enabled) => {
+    windowedFullscreen = !!enabled;
     if (!mainWindow) return;
     if (enabled) {
         mainWindow.maximize();
@@ -207,5 +230,18 @@ ipcMain.handle('ms-login', async () => {
     } catch (error) {
         console.error("Giriş iptal edildi veya hata:", error);
         return null;
+    }
+});
+
+ipcMain.handle('ms-refresh', async (event, storedMclcToken) => {
+    try {
+        if (!storedMclcToken) return { ok: false, error: 'Token bulunamadı.' };
+        const authManager = new Auth("select_account");
+        let mc = tokenUtils.fromMclcToken(authManager, storedMclcToken);
+        mc = await mc.refresh(false);
+        return { ok: true, data: mc.mclc(true) };
+    } catch (error) {
+        console.error("MS token yenileme hatası:", error);
+        return { ok: false, error: error?.message || String(error) };
     }
 });

@@ -48,7 +48,8 @@
     ],
     "win": {
       "target": "nsis",
-      "icon": "icon.ico"
+      "icon": "icon.ico",
+      "artifactName": "MineCore-Installer.exe"
     },
     "nsis": {
       "oneClick": false,
